@@ -98,53 +98,6 @@ const thayanithi = {
 * **EQREV**: Engineered a high-throughput SaaS analytics platform providing D2C brands with pin-code level store analytics across **1,000+ retail stores** on Zepto, Blinkit, and Instamart. Adopted by leading brands including Mee Mee, Ramraj, and Underneat.
 * **CRAYON'D**: Delivered **2+ client-facing products** using Next.js, BDD API testing suites, and modular UI component libraries, resulting in a **20% acceleration** in feature delivery pipelines.
 * **THINKUNI**: Developed a multi-role student dashboard and interactive learning visualization platform powered by Vue.js and REST endpoints.
-
----
-
-## 💻 Portfolio Web Application: End-to-End Implementation
-
-This repository contains the source code for my interactive personal portfolio. Designed with a **cyberpunk & ASCII-inspired developer aesthetic**, it goes beyond a typical static website by featuring active terminal simulation, real-time AI assistance, and dynamic visitor persona customization.
-
-```
-📁 Portfolio Architecture Overview
-├── 📂 app/                     # Next.js 14 App Router pages & API handlers
-│   ├── 📂 api/                 # Backend serverless endpoints (AI Assistant, Telemetry)
-│   ├── 📂 assistant/           # Standalone AI assistant page view
-│   ├── 📂 stats/               # Dynamic GitHub & LeetCode analytics integration
-│   ├── 📄 layout.tsx           # Global root layout with theme providers
-│   └── 📄 page.tsx             # Main dashboard container & component orchestrator
-├── 📂 components/ascii-hub/    # Core feature components
-│   ├── 📄 pseudo-terminal.tsx  # In-browser CLI terminal command processor
-│   ├── 📄 ai-assistant.tsx     # Embedded portfolio AI assistant chat interface
-│   ├── 📄 ascii-canvas.tsx     # Generative ASCII background renderer
-│   ├── 📄 visitor-filter-bar.tsx # Persona-based content filtering bar
-│   ├── 📄 shutdown-manager.tsx # Interactive retro system power-off simulation
-│   ├── 📄 hero-section.tsx     # Animated terminal hero section
-│   ├── 📄 domain-section.tsx   # Domain-based tech stack showcases
-│   └── 📄 floating-controls.tsx# Sound & theme floating control widget
-└── 📂 lib/                     # System state, constants, & data stores
-```
-
-### 🛠️ Technical Architecture & Key Implementation Features
-
-#### 1. Interactive Pseudo-Terminal CLI (`components/ascii-hub/pseudo-terminal.tsx`)
-- **Implementation**: Built a client-side command parser supporting commands like `help`, `skills`, `projects`, `stats`, `contact`, `clear`, and `matrix`.
-- **User Experience**: Allows developers and technical recruiters to interact with the portfolio via a Unix-style command line interface complete with input history navigation and simulated system output responses.
-
-#### 2. Embedded Portfolio AI Assistant (`components/ascii-hub/ai-assistant.tsx` & `app/api/`)
-- **Implementation**: Integrated a conversational AI assistant trained on portfolio data, technical experience, and project specifications.
-- **User Experience**: Visitors can ask direct questions (e.g., *"What stack was used for CNC Vault?"* or *"Tell me about Thayanithi's experience at EQREV"*), receiving instant, contextual responses.
-
-#### 3. Generative ASCII Canvas (`components/ascii-hub/ascii-canvas.tsx`)
-- **Implementation**: HTML5 Canvas animation engine that continuously renders generative ASCII art and dynamic matrix rain streams in the background.
-- **Performance**: Optimized requestAnimationFrame loops to ensure smooth 60 FPS rendering with minimal GPU memory footprint.
-
-#### 4. Role-Based Visitor Filter Bar (`components/ascii-hub/visitor-filter-bar.tsx`)
-- **Implementation**: State-driven persona selector that filters featured projects, skills, and code metrics according to visitor roles (e.g., *Recruiter*, *Full-Stack Engineer*, *SaaS Founder*, or *Open Source Contributor*).
-
-#### 5. Retro System Shutdown Manager (`components/ascii-hub/shutdown-manager.tsx`)
-- **Implementation**: Interactive state controller that simulates CRT monitor shutdown animations, audio clicks, and interface power-off sequences, offering a fun interactive easter egg for visitors.
-
 ---
 
 ## 🚀 Featured Projects
