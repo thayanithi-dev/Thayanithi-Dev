@@ -18,7 +18,7 @@ const socialLinks = [
   { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/thayanithi15" },
   { name: "LeetCode", icon: Code2, href: "https://leetcode.com/u/thayanithi04/" },
   { name: "Twitter / X", icon: Twitter, href: "https://x.com/Thayanithi887" },
-  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/thayanithi_15" },
+  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/thayanithi._" },
 ]
 
 export function Footer() {

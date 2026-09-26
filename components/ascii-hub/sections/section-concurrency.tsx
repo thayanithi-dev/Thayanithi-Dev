@@ -14,7 +14,8 @@ const shadow = "rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 
 
 const subtopicDescriptions: Record<string, string> = {
   // Cloud Computing
-  GCP: "Google Cloud Platform infra, IAM role policies & Cloud Run autoscaling.",
+  "AWS (EC2/Lambda)": "AWS EC2 instances, Lambda serverless functions, S3 storage & CloudWatch metrics.",
+  GCP: "Google Cloud Platform infra, BigQuery data pipelines & GCS bucket security.",
   Kubernetes: "Container orchestration, ingress controllers & pod autoscaling.",
   "Distributed Architecture": "Consensus algorithms (Raft/Paxos) & CAP theorem trade-offs.",
   Docker: "Multi-stage Dockerfiles, container isolation & custom virtual networks.",
@@ -31,25 +32,26 @@ const subtopicDescriptions: Record<string, string> = {
 
   // AI Integration
   "RAG Patterns": "Retrieval-Augmented Generation, vector embeddings & hybrid search.",
-  "Vector Databases": "Qdrant / Pinecone indexing, cosine similarity & HNSW graphs.",
-  "LLM Agents": "Autonomous tool invocation, agentic loops & working memory state.",
-  PyTorch: "Tensor manipulations, CUDA GPU acceleration & gradient descent.",
-  Quantization: "GGUF/AWQ model compression, FP16 to INT4 weight quantization.",
+  "Vector Databases": "ChromaDB / Pinecone indexing, cosine similarity & semantic search.",
+  "LangChain & LlamaIndex": "Modular chains, contextual retrieval & document question-answering.",
+  "LLM Agents": "Autonomous tool invocation, agentic loops & function calling.",
+  "OpenAI API": "Prompt engineering, token optimization & fine-tuning workflows.",
   "Fine-Tuning": "LoRA / QLoRA parameter-efficient LLM fine-tuning workflows.",
 
   // Open Source
   "Developer Tools": "CLI tools, scaffolding utilities & dev experience automation.",
+  "reqtimeline (npm)": "Zero-dependency Express.js request lifecycle & execution profiler.",
   "Library Development": "NPM/Cargo packages, semver versioning & tree-shakeable builds.",
   "API Design": "RESTful standards, GraphQL schema stitching & OpenAPI specs.",
   "Git Workflows": "Trunk-based development, interactive rebase & conventional commits.",
-  "CI/CD Pipelines": "GitHub Actions matrix builds & automated integration testing."
+  "CI/CD Pipelines": "GitHub Actions matrix builds & automated zero-downtime deployments."
 }
 
 const threadLanesMeta = [
-  { name: "Cloud Computing", items: ["GCP", "Docker", "Kubernetes", "Distributed Architecture", "Serverless", "Terraform"] },
+  { name: "Cloud Computing", items: ["AWS (EC2/Lambda)", "GCP", "Docker", "Kubernetes", "Distributed Architecture", "Serverless"] },
   { name: "System Design", items: ["High Availability", "Caching Strategies", "Event-driven Systems", "Load Balancing", "Microservices", "API Gateways"] },
-  { name: "AI Integration", items: ["RAG Patterns", "Vector Databases", "LLM Agents", "PyTorch", "Quantization", "Fine-Tuning"] },
-  { name: "Open Source", items: ["Developer Tools", "Library Development", "API Design", "Git Workflows", "CI/CD Pipelines"] }
+  { name: "AI Integration", items: ["RAG Patterns", "Vector Databases", "LangChain & LlamaIndex", "LLM Agents", "OpenAI API", "Fine-Tuning"] },
+  { name: "Open Source", items: ["Developer Tools", "reqtimeline (npm)", "Library Development", "Git Workflows", "CI/CD Pipelines"] }
 ]
 
 type FilterType = "all" | "active" | "research" | "backlog"

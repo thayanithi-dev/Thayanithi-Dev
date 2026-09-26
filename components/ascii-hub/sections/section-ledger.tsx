@@ -99,50 +99,58 @@ function BlockCard({ block, index, isSelected, onSelect }: {
       viewport={{ once: true }}
       transition={{ delay: 0.15 + index * 0.1 }}
       onClick={onSelect}
-      className={`group relative flex w-56 flex-shrink-0 flex-col border p-4 text-left font-mono transition-all duration-300 focus-visible:ring-2 focus-visible:ring-foreground focus-visible:outline-none ${
+      className={`group relative flex w-[270px] h-[210px] flex-shrink-0 flex-col justify-between border p-4 text-left font-mono transition-all duration-300 focus-visible:ring-2 focus-visible:ring-foreground focus-visible:outline-none ${
         isSelected
           ? "border-foreground bg-foreground text-background"
           : "border-border bg-background text-foreground hover:border-foreground"
       }`}
       style={{ boxShadow: shadow }}
     >
-      <div className="flex items-start justify-between w-full mb-2">
-        <span className={`text-[10px] uppercase tracking-wider ${isSelected ? "text-background/50" : "text-muted-foreground"}`}>
-          {block.timeline}
-        </span>
-        <div className={`relative h-11 w-11 shrink-0 bg-zinc-100 p-1 rounded-sm overflow-hidden ${
-          isSelected ? "border-0" : "border border-border"
-        }`} style={{ boxShadow: isSelected ? "none" : shadow }}>
-          <Image
-            src={block.logoDark}
-            alt={block.company}
-            fill
-            sizes="44px"
-            className={`object-contain transition-all duration-300 ${
-              isSelected ? "grayscale-0" : "grayscale hover:grayscale-0"
-            }`}
-          />
+      <div>
+        <div className="flex items-start justify-between w-full mb-2">
+          <span className={`text-[10px] uppercase tracking-wider font-semibold ${isSelected ? "text-background/60" : "text-muted-foreground"}`}>
+            {block.timeline}
+          </span>
+          <div className={`relative h-11 w-11 shrink-0 bg-zinc-100 p-1 rounded-sm overflow-hidden ${
+            isSelected ? "border-0" : "border border-border"
+          }`} style={{ boxShadow: isSelected ? "none" : shadow }}>
+            <Image
+              src={block.logoDark}
+              alt={block.company}
+              fill
+              sizes="44px"
+              className={`object-contain transition-all duration-300 ${
+                isSelected ? "grayscale-0" : "grayscale hover:grayscale-0"
+              }`}
+            />
+          </div>
+        </div>
+        <div className="flex flex-col gap-0.5">
+          <span className={`text-sm font-bold truncate ${isSelected ? "text-background" : "text-foreground"}`} title={block.company}>
+            {block.company}
+          </span>
+          <span className={`text-[10px] line-clamp-2 leading-tight ${isSelected ? "text-background/80" : "text-muted-foreground"}`} title={block.role}>
+            {block.role}
+          </span>
         </div>
       </div>
-      <span className={`text-sm font-bold ${isSelected ? "text-background" : "text-foreground"}`}>
-        {block.company}
-      </span>
-      <span className={`text-[10px] ${isSelected ? "text-background/70" : "text-muted-foreground"}`}>
-        {block.role}
-      </span>
-      <div className="mt-3 flex flex-col gap-1 text-[10px]">
+
+      <div className={`mt-auto pt-2.5 flex flex-col gap-1 text-[10px] border-t ${
+        isSelected ? "border-background/20" : "border-border/60"
+      }`}>
         <div className="flex justify-between">
           <span className={isSelected ? "text-background/50" : "text-muted-foreground"}>Location</span>
-          <span>{block.type}</span>
+          <span className="font-semibold">{block.type}</span>
         </div>
         <div className="flex justify-between">
           <span className={isSelected ? "text-background/50" : "text-muted-foreground"}>Block</span>
-          <span>#{block.height}</span>
+          <span className="font-semibold">#{block.height}</span>
         </div>
       </div>
+
       {/* Chain connector */}
       {index < blocks.length - 1 && (
-        <div className="absolute -right-[40px] top-1/2 hidden -translate-y-1/2 items-center md:flex w-8 h-8" aria-hidden="true">
+        <div className="absolute -right-[40px] top-1/2 hidden -translate-y-1/2 items-center md:flex w-8 h-8 pointer-events-none" aria-hidden="true">
           <svg className="w-full h-full text-foreground/45" viewBox="0 0 24 24" fill="none">
             {/* Background line */}
             <line x1="0" y1="12" x2="24" y2="12" stroke="currentColor" strokeWidth="1" className="opacity-25" />

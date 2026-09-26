@@ -23,11 +23,11 @@ const siteUrl = "https://www.thayanithi.tech"
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Thayanithi S | SDE & Infra Engineer Portfolio",
+    default: "Thayanithi S | Full Stack & Cloud Engineer Portfolio",
     template: "%s | Thayanithi S",
   },
   description:
-    "Explore the technical engineering portfolio of Thayanithi S (SDE & Infra Engineer). Specializing in Fullstack web development (Next.js, React), scalable backend architecture (Node.js, Go, MongoDB, PostgreSQL), cross-platform mobile apps, and distributed cloud infrastructure.",
+    "Explore the technical engineering portfolio of Thayanithi S (Full Stack & Cloud Engineer). Specializing in AI/LLM platforms (RAG, LangChain), fullstack web applications (Next.js, React), scalable backend architecture (Node.js, Express, Fastify, PostgreSQL, MongoDB), and zero-downtime cloud pipelines on AWS & GCP.",
   applicationName: "Thayanithi S Portfolio",
   authors: [
     {
@@ -45,47 +45,63 @@ export const metadata: Metadata = {
     "Thayanithi Dev",
     "thayanithi15",
     "thayanithi-dev",
+    "thayanithi04",
     "Thayanithi portfolio",
     "Thayanithi developer",
     "Thayanithi engineer",
     // Roles & Titles
+    "Full Stack & Cloud Engineer",
+    "Full Stack Developer",
     "Software Development Engineer",
     "SDE",
-    "Infra Engineer",
-    "Fullstack Engineer",
-    "Full Stack Developer",
-    "Backend Architect",
-    "Frontend Developer",
     "Cloud Engineer",
     "DevOps Engineer",
-    "Systems Engineer",
+    "Backend Architect",
+    "AI Systems Engineer",
+    "Frontend Developer",
     "Mobile App Developer",
-    // Core Tech Stack
-    "Next.js developer",
+    // AI & Cloud Tech Stack
+    "Retrieval-Augmented Generation",
+    "RAG",
+    "LangChain",
+    "LlamaIndex",
+    "Vector Databases",
+    "ChromaDB",
+    "Pinecone",
+    "OpenAI API",
+    "AWS",
+    "AWS EC2",
+    "AWS Lambda",
+    "Google Cloud Platform",
+    "GCP",
+    "BigQuery",
+    "Docker",
+    "CI/CD",
+    "GitHub Actions",
+    // Core Engineering
+    "Next.js",
     "React.js",
     "React Native",
+    "Node.js",
     "TypeScript",
     "JavaScript",
-    "Node.js",
-    "Go",
-    "Golang",
-    "MongoDB",
+    "Java",
+    "Python",
+    "C",
+    "SQL",
     "PostgreSQL",
+    "MongoDB",
     "Tailwind CSS",
-    "Docker",
-    "Cloud Architecture",
-    "Distributed Systems",
-    "REST APIs",
-    "GraphQL",
+    "reqtimeline",
     // Specializations & Themes
     "ASCII portfolio",
     "Monochrome developer portfolio",
     "Terminal portfolio",
     "High performance web apps",
-    "Technical portfolio",
-    "Software Engineer Namakkal",
-    "Software Engineer Tamil Nadu",
+    "Distributed Systems",
     "Software Engineer India",
+    "Software Engineer Tamil Nadu",
+    "Bannari Amman Institute of Technology",
   ],
   alternates: {
     canonical: "/",
@@ -98,15 +114,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "Thayanithi S Portfolio",
-    title: "Thayanithi S | SDE & Infra Engineer Portfolio",
+    title: "Thayanithi S | Full Stack & Cloud Engineer Portfolio",
     description:
-      "Architecting raw logic into refined, high-performance systems. Fullstack web applications, scalable backend infrastructure, and cross-platform mobile apps by Thayanithi S.",
+      "Designing resilient distributed architectures, AI/LLM platforms, and automated cloud pipelines on AWS & GCP by Thayanithi S.",
     images: [
       {
         url: "/T_Light.png",
         width: 1200,
         height: 630,
-        alt: "Thayanithi S - SDE & Infra Engineer Portfolio",
+        alt: "Thayanithi S - Full Stack & Cloud Engineer Logo",
       },
     ],
   },
@@ -114,9 +130,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Thayanithi887",
     creator: "@Thayanithi887",
-    title: "Thayanithi S | SDE & Infra Engineer",
+    title: "Thayanithi S | Full Stack & Cloud Engineer",
     description:
-      "Fullstack, Mobile, and Backend Architect. Explore technical projects, system specs, and performance benchmarks.",
+      "Full Stack & Cloud Engineer. Explore technical projects, AI systems, system specs, and performance benchmarks.",
     images: ["/T_Light.png"],
   },
   robots: {
@@ -136,14 +152,26 @@ export const metadata: Metadata = {
     icon: [
       {
         url: "/T_Light.png",
-        sizes: "any",
+        media: "(prefers-color-scheme: dark)",
+        type: "image/png",
       },
       {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/T_Dark.png",
+        media: "(prefers-color-scheme: light)",
+        type: "image/png",
+      },
+      {
+        url: "/T_Light.png",
+        sizes: "any",
       },
     ],
-    apple: "/T_Light.png",
+    apple: [
+      {
+        url: "/T_Light.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
     shortcut: "/T_Light.png",
   },
   category: "technology",
@@ -166,10 +194,10 @@ const jsonLd = {
       "@type": "Person",
       "@id": `${siteUrl}/#person`,
       name: "Thayanithi S",
-      alternateName: ["Thayanithi", "Thayanithi Dev", "thayanithi15", "thayanithi-dev"],
+      alternateName: ["Thayanithi", "Thayanithi Dev", "thayanithi15", "thayanithi-dev", "thayanithi04"],
       url: siteUrl,
       image: `${siteUrl}/T_Light.png`,
-      jobTitle: "Software Development Engineer & Infra Architect",
+      jobTitle: "Full Stack & Cloud Engineer",
       worksFor: {
         "@type": "Organization",
         name: "Freelance / Independent Engineer",
@@ -177,28 +205,35 @@ const jsonLd = {
       sameAs: [
         "https://github.com/thayanithi-dev",
         "https://www.linkedin.com/in/thayanithi15",
+        "https://leetcode.com/u/thayanithi04/",
         "https://x.com/Thayanithi887",
-        "https://www.instagram.com/thayanithi_15",
+        "https://www.instagram.com/thayanithi._",
       ],
       knowsAbout: [
-        "Fullstack Development",
-        "Software Engineering",
+        "Full Stack Development",
+        "Cloud Infrastructure",
+        "AWS (EC2, Lambda, S3)",
+        "Google Cloud Platform & BigQuery",
+        "AI & LLMs",
+        "Retrieval-Augmented Generation (RAG)",
+        "LangChain",
+        "Vector Databases",
         "Next.js",
         "React",
         "React Native",
         "TypeScript",
         "JavaScript",
+        "Java",
+        "Python",
         "Node.js",
-        "Go / Golang",
-        "MongoDB",
         "PostgreSQL",
-        "Cloud Infrastructure",
-        "DevOps",
+        "MongoDB",
+        "CI/CD Pipelines",
+        "Docker",
         "Distributed Systems",
-        "Backend Architecture",
       ],
       description:
-        "SDE & Infra Engineer specializing in Fullstack web platforms, cross-platform mobile apps, and scalable backend architectures.",
+        "Full Stack & Cloud Engineer specializing in AI/LLM systems, distributed architectures, zero-downtime CI/CD pipelines, and high-volume data streams.",
     },
     {
       "@type": "WebSite",
@@ -206,7 +241,7 @@ const jsonLd = {
       url: siteUrl,
       name: "Thayanithi S | Portfolio",
       description:
-        "Personal engineering showcase of Thayanithi S featuring high-performance web systems, distributed backends, and terminal ASCII aesthetics.",
+        "Personal engineering showcase of Thayanithi S featuring high-performance cloud systems, AI/RAG architectures, and terminal ASCII aesthetics.",
       publisher: {
         "@id": `${siteUrl}/#person`,
       },
@@ -223,6 +258,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={geistPixelLine.variable} suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/T_Light.png" media="(prefers-color-scheme: dark)" type="image/png" />
+        <link rel="icon" href="/T_Dark.png" media="(prefers-color-scheme: light)" type="image/png" />
+        <link rel="apple-touch-icon" href="/T_Light.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
