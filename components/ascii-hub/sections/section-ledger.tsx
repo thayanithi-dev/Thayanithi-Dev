@@ -21,51 +21,67 @@ const shadow = "rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 
 
 const blocks = [
   {
-    company: "EQREV",
-    role: "Software Engineer",
-    timeline: "Jan 2025 – Dec 2025",
-    type: "Hybrid",
-    hash: "EQREV-TX01",
+    company: "Eqrev - Sai Sakthi Enterprises",
+    role: "Software Engineer Intern - Full Stack & DevOps / Infra",
+    timeline: "Jun 2026 – Dec 2026",
+    type: "Hybrid Work",
+    hash: "EQREV-INFRA-TX01",
     prev: "GENESIS-00",
-    height: 1021,
+    height: 1024,
     logoDark: eqrevDark,
     logoLight: eqrevLight,
     details: [
-      "Engineered a SaaS platform for Zepto, Blinkit, and Instamart with pin code-level insights across 1,000+ stores in India.",
-      "Adopted by leading D2C brands like Mokobara and Lifelong, delivering a complete frontend experience from landing page to full platform.",
-      "Enabled data-driven product and inventory strategies that optimized overall performance."
+      "Engineered full-stack features and automated CI/CD infrastructure pipelines, streamlining build validations, testing suites, and continuous service deployments.",
+      "Orchestrated automated data and infrastructure jobs to schedule extraction, transformation, and ingestion of 2+ billion records across GCS and BigQuery.",
+      "Configured and monitored resource-constrained GCP VMs to reliably handle heavy concurrent data workloads with maximum resource efficiency and high availability."
+    ]
+  },
+  {
+    company: "Eqrev - Sai Sakthi Enterprises",
+    role: "Software Developer - Product & Platform Development",
+    timeline: "Jan 2025 – Dec 2025",
+    type: "Hybrid Work",
+    hash: "EQREV-PROD-TX02",
+    prev: "EQREV-INFRA-TX01",
+    height: 1023,
+    logoDark: eqrevDark,
+    logoLight: eqrevLight,
+    details: [
+      "Engineered a SaaS analytics platform delivering pin-code metrics across 1,000+ stores on Zepto, Blinkit, and Swiggy Instamart for leading D2C brands (Mee Mee, Ramraj, Underneat).",
+      "Automated backend data pipelines, reducing manual effort by 60% and accelerating report generation efficiency by 40%.",
+      "Architected responsive full-stack dashboards and optimized high-volume query throughput for rapid client reporting."
+    ]
+  },
+  {
+    company: "ThinkUni",
+    role: "Frontend Engineer",
+    timeline: "Oct 2025 – Jan 2026",
+    type: "Remote",
+    hash: "THINKUNI-TX03",
+    prev: "EQREV-PROD-TX02",
+    height: 1022,
+    logoDark: thinkuniLogo,
+    logoLight: thinkuniLogo,
+    details: [
+      "Engineered client-side features for a multi-service social platform catering to 1,000+ active users.",
+      "Designed 30+ responsive UI components with strict role-based access control (RBAC), drastically minimizing user-interface bugs.",
+      "Optimized modular UI architecture and interface performance across desktop and mobile screens."
     ]
   },
   {
     company: "Crayon’d",
-    role: "Software Engineer",
+    role: "Full Stack Engineer",
     timeline: "Sep 2024 – Apr 2025",
     type: "Sathy, Erode",
-    hash: "CRAYOND-TX02",
-    prev: "EQREV-TX01",
-    height: 1022,
+    hash: "CRAYOND-TX04",
+    prev: "THINKUNI-TX03",
+    height: 1021,
     logoDark: crayondLogo,
     logoLight: crayondLogo,
     details: [
-      "Developed 2+ client-facing products with responsive React UIs and scalable Node.js/Express APIs, achieving 20% faster feature delivery.",
-      "Crafted modular design, optimized API integrations, coding standards, and Git workflows.",
-      "Enhanced code maintainability, team efficiency, and deployment speed."
-    ]
-  },
-  {
-    company: "Thinkuni",
-    role: "Software Engineer",
-    timeline: "Sept 2025 – Jan 2026",
-    type: "Remote",
-    hash: "THINKUNI-TX03",
-    prev: "CRAYOND-TX02",
-    height: 1023,
-    logoDark: thinkuniLogo,
-    logoLight: thinkuniLogo,
-    details: [
-      "Developed frontend components and modules focused on interactive learning and data visualization.",
-      "Improved user engagement and learning outcomes through innovative UI solutions.",
-      "Built Vue.js components for enhanced learning analytics dashboards."
+      "Built 2+ client-facing web products with Next.js and REST integrations using BDD testing, enabling 20% faster feature delivery.",
+      "Standardized modular components and established automated Git CI/CD workflows to improve code quality and deployment velocity.",
+      "Optimized database queries, API response latency, and component reusability across production codebases."
     ]
   }
 ]

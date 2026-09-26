@@ -16,33 +16,34 @@ export const techSections: TechSection[] = [
     title: "About Me",
     subtitle: "Biography & Focus",
     description:
-      "SDE & Infra Engineer specializing in Fullstack web platforms, cross-platform mobile apps, and scalable backend architectures. Deeply passionate about raw logic, performance optimization, and translating complex IT requirements into clean, state-of-the-art software systems.",
+      "Full Stack & Cloud Engineer with proven experience designing and delivering resilient, distributed architectures across front-end, back-end, and cloud infrastructures. Adept in architecting AI/LLM-enabled platforms (RAG architectures, LangChain, vector retrieval) and deploying automated, zero-downtime CI/CD pipelines on AWS (EC2, Lambda) and GCP. Track record of building production SaaS systems handling high-volume data streams of 2+ billion records, publishing developer tooling to npm, and optimizing application throughput to improve operational efficiency by 40%.",
     ascii: `
     ┌──────────────────────────────────────────┐
-    │  THAYANITHI S - SDE & INFRA ENGINEER    │
+    │  THAYANITHI S - FULL STACK & CLOUD ENG   │
     │  ┌──────────────────┐ ┌────────────────┐ │
-    │  │ FULLSTACK WEB    │ │ MOBILE APPS    │ │
-    │  │ Next.js/React.js │ │ React Native   │ │
+    │  │ FULLSTACK & AI   │ │ CLOUD & DEVOPS │ │
+    │  │ Next.js/RAG/LLMs │ │ AWS/GCP CI/CD  │ │
     │  └────────┬─────────┘ └────────┬───────┘ │
     │           │                    │         │
     │  ┌────────┴────────────────────┴───────┐ │
-    │  │ BACKEND ARCHITECT & DATABASES       │ │
-    │  │ Node.js, Go, MongoDB, PostgreSQL, GCP│ │
+    │  │ DISTRIBUTED BACKENDS & BIG DATA     │ │
+    │  │ Node, Java, Python, BigQuery, Mongo │ │
     │  └─────────────────────────────────────┘ │
     └──────────────────────────────────────────┘`,
     specs: [
-      { label: "Location", value: "Namakkal, Tamil Nadu, India" },
+      { label: "Location", value: "Namakkal / Sathyamangalam, Tamil Nadu, India" },
       { label: "Email", value: "thayanithi2006s@gmail.com" },
-      { label: "Focus", value: "Fullstack, Mobile, Backend Architecture" },
-      { label: "Motto", value: "The best way to predict the future is to create it." },
+      { label: "Phone", value: "+91-9025391287" },
+      { label: "Education", value: "B.E. CSE @ Bannari Amman Institute of Technology (8.09 CGPA)" },
+      { label: "Focus", value: "Full Stack, AI/LLMs, Cloud Infra, Distributed Systems" },
     ],
     commands: [
       "$ whoami",
-      "Thayanithi S - SDE & Infra Engineer",
+      "Thayanithi S - Full Stack & Cloud Engineer",
       "$ locate --region",
-      "Namakkal, Tamil Nadu, India",
-      "$ cat bio.txt",
-      "Fueled by ∞ cups of coffee & passion for code.",
+      "Namakkal / Sathyamangalam, Tamil Nadu, India",
+      "$ cat summary.txt",
+      "Building resilient distributed systems, AI/RAG platforms & high-throughput cloud pipelines.",
     ],
   },
   {
@@ -51,62 +52,67 @@ export const techSections: TechSection[] = [
     title: "Tech Stack",
     subtitle: "Skills & Ecosystem",
     description:
-      "Mapping the tech stack nodes. Representing languages, frameworks, state management, databases, ORMs, cloud infrastructure, and development tools that link my engineering environment together.",
+      "Comprehensive multi-tier technical expertise spanning modern programming languages, AI/LLM engineering, cloud infrastructures, automated DevOps pipelines, and robust database architectures.",
     ascii: `
-    [Languages] ─────────────── [Frameworks]
+    [Languages] ─────────────── [AI & LLM Stack]
          │                           │
-         ├───────[TypeScript]────────┼─────── [Next.js / React]
-         ├───────[JavaScript]────────┼─────── [React Native / Flutter]
-         ├───────[C / Java]──────────┼─────── [Node.js / Express]
+         ├───────[Java / Python]─────┼─────── [RAG / LangChain / LlamaIndex]
+         ├───────[TypeScript / JS]───┼─────── [ChromaDB / Pinecone / OpenAI]
+         ├───────[C / SQL]───────────┼─────── [Semantic Search / Fine-Tuning]
          │                           │
-    [Databases] ─────────────── [Cloud & Tools]
+    [Cloud & DevOps] ────────── [Fullstack & Data]
          │                           │
-         ├───────[PostgreSQL]────────┼─────── [Google Cloud / BigQuery]
-         └───────[MongoDB]───────────└─────── [Git / GitHub / REST APIs]`,
+         ├───────[AWS: EC2/Lambda/S3]┼─────── [Next.js / React / React Native]
+         ├───────[GCP: GCS/BigQuery]─┼─────── [Node.js / Express / Fastify]
+         └───────[CI/CD / Docker]────└─────── [PostgreSQL / MongoDB / MySQL]`,
     specs: [
-      { label: "Languages", value: "TypeScript, JavaScript, C, Java, Python" },
-      { label: "Frameworks", value: "Next.js, React.js, React Native, Vue, Flutter" },
-      { label: "Databases & ORMs", value: "MongoDB, MySQL, PostgreSQL, Prisma, Sequelize" },
-      { label: "Cloud & DevTools", value: "Google Cloud, BigQuery, Git, GitHub, REST APIs, Postman" },
+      { label: "Languages", value: "Java, Python, TypeScript, JavaScript, C, SQL" },
+      { label: "AI & LLM Stack", value: "RAG, LangChain, LlamaIndex, ChromaDB, Pinecone, Hugging Face, OpenAI API, Semantic Search" },
+      { label: "Cloud & DevOps", value: "AWS (EC2, Lambda, S3, IAM, CloudWatch), GCP (GCS, BigQuery, VMs), Docker, GitHub Actions, Nginx, Cloudflare" },
+      { label: "Fullstack & DBs", value: "Next.js, React.js, Vue.js, React Native, Node.js, Express, Fastify, PostgreSQL, MongoDB, MySQL" },
     ],
     commands: [
       "$ tech-stack --scan",
-      "Scanning active developer modules...",
-      "TypeScript [100%] Next.js [100%] React Native [90%] MongoDB [95%] GCP [85%]",
+      "Scanning active engineering modules...",
+      "Java/Python [95%] TypeScript [100%] AI/RAG [90%] AWS/GCP [90%] Next.js [100%]",
       "$ git --version",
-      "git version 2.43.0",
+      "git version 2.43.0 with GitHub Actions automated CI/CD",
     ],
   },
   {
     id: "experience",
     number: "03",
     title: "Experience",
-    subtitle: "Work History",
+    subtitle: "Internship History",
     description:
-      "Professional history ledger. Tracking technical milestones, platform engineering, and high-performance product deployments. Click on the blocks below to inspect roles, timelines, and key outcomes.",
+      "Chronological ledger of professional software engineering and cloud infrastructure roles across production SaaS environments, high-volume data streams, and client applications.",
     ascii: `
-     EQREV (Jan-Dec 2025)     Crayon'd (Sep 24-Apr 25)
+     Eqrev (Jun-Dec 2026)      Eqrev (Jan-Dec 2025)
     ┌──────────────────────┐  ┌──────────────────────┐
-    │ Role: Software Eng   │─>│ Role: Software Eng   │
-    │ Focus: SaaS & Q-Comm │  │ Focus: React & APIs  │
-    │ Tech: React, Zustand │  │ Tech: Node, Express  │
+    │ Role: SDE Intern     │─>│ Role: Software Dev   │
+    │ DevOps, Infra & Data │  │ SaaS & Quick Commerce│
+    │ 2B+ Records Pipeline │  │ Zepto/Blinkit/Swiggy │
     └──────────────────────┘  └──────────────────────┘
                │                         │
-               └─────────> Thinkuni ─────┘
-                           (Sep 25 - Jan 26)
-                           Role: Frontend Engineer`,
+               ├─────────> ThinkUni ─────┤
+               │           (Oct 25-Jan 26)│
+               │           Frontend Eng  │
+               │                         │
+               └─────────> Crayon'd ─────┘
+                           (Sep 24-Apr 25)
+                           Full Stack Eng`,
     specs: [
-      { label: "EQREV", value: "Software Engineer | Jan 2025 – Dec 2025" },
-      { label: "Crayon'd", value: "Software Engineer | Sep 2024 – Apr 2025" },
-      { label: "Thinkuni", value: "Software Engineer | Sept 2025 – Jan 2026" },
-      { label: "Total Tenure", value: "1.5+ Years Product Engineering" },
+      { label: "Eqrev (DevOps/Infra)", value: "Software Engineer Intern | Jun 2026 – Dec 2026 (2B+ Records on GCP)" },
+      { label: "Eqrev (Product)", value: "Software Developer | Jan 2025 – Dec 2025 (40% Efficiency Boost)" },
+      { label: "ThinkUni", value: "Frontend Engineer | Oct 2025 – Jan 2026 (1,000+ Active Users, RBAC)" },
+      { label: "Crayon'd", value: "Full Stack Engineer | Sep 2024 – Apr 2025 (2+ Client Web Products, BDD)" },
     ],
     commands: [
       "$ experience query --details",
-      "Retrieving cryptographic proof of employment...",
-      "EQREV: Engineered SaaS platform for Zepto, Blinkit, Instamart. Pin code analytics.",
-      "Crayon'd: Developed 2+ client products. Scalable Express APIs. 20% faster delivery.",
-      "Thinkuni: Vue.js dashboards. Interactive learning visualizations.",
+      "Eqrev (Infra): Scheduled extraction/transformation of 2B+ records on GCS & BigQuery, CI/CD pipelines.",
+      "Eqrev (SaaS): Automated backend data pipelines reducing manual effort by 60% for Zepto/Blinkit/Instamart.",
+      "ThinkUni: Built 30+ responsive UI components with strict RBAC for 1,000+ active users.",
+      "Crayon'd: Built 2+ client Next.js apps with BDD testing enabling 20% faster feature delivery.",
     ],
   },
   {
@@ -115,174 +121,175 @@ export const techSections: TechSection[] = [
     title: "Education",
     subtitle: "Academic Background",
     description:
-      "Academic background at Bannari Amman Institute of Technology, translating computer science theory into solid engineering capabilities and practical architecture skills.",
+      "Academic foundation at Bannari Amman Institute of Technology and Malar Matriculation Higher Secondary School, building rigorous competencies in computer science, software engineering, and systems architecture.",
     ascii: `
     Bannari Amman Institute of Technology
-    (2023 - 2027) ──> B.E. Computer Science and Engineering
-                         │
-                  CGPA Compilation
-                         │
-                 ┌───────┴───────┐
-                 │ Current CGPA  │
-                 │ ┌──┬──┬──┐    │
-                 │ │8.│2 │  │    │
-                 │ └──┴──┴──┘    │
-                 └───────────────┘`,
+    (Sep 2023 - Apr 2027) ──> B.E. Computer Science & Engineering
+                                 │
+                          CGPA Compilation: 8.09 / 10.0
+                                 │
+                         ┌───────┴───────┐
+                         │ Current CGPA  │
+                         │ ┌──┬──┬──┐    │
+                         │ │8.│0 │9 │    │
+                         │ └──┴──┴──┘    │
+                         └───────────────┘
+    Malar Matric Higher Secondary (2021 - 2023) ──> HSC: 92.38%`,
     specs: [
-      { label: "Institution", value: "Bannari Amman Institute of Technology" },
-      { label: "Major", value: "Computer Science and Engineering" },
-      { label: "Timeline", value: "2023 - 2027" },
-      { label: "CGPA / 12th", value: "8.2 CGPA | 12th Grade: 92.38%" },
+      { label: "Undergraduate", value: "Bannari Amman Institute of Technology, Sathyamangalam (2023 - 2027)" },
+      { label: "Degree & CGPA", value: "B.E. Computer Science and Engineering — 8.09 CGPA" },
+      { label: "Higher Secondary", value: "Malar Matriculation Higher Secondary School, Namakkal (2021 - 2023)" },
+      { label: "HSC Percentage", value: "Higher Secondary Certificate (HSC) — 92.38%" },
     ],
     commands: [
       "$ compile --degree",
-      "Degree: B.E. Computer Science and Engineering",
-      "$ compile --marks",
-      "CGPA: 8.2/10.0 | HSC: 92.38%",
-      "$ compile --courses",
-      "Data Structures, DBMS, OS, Distributed Systems, Software Engineering",
+      "Degree: Bachelor of Engineering in Computer Science and Engineering (8.09 CGPA)",
+      "$ compile --school",
+      "Higher Secondary Certificate (HSC): 92.38% - Malar Matriculation Higher Secondary School",
+      "$ compile --core-courses",
+      "Data Structures & Algorithms, Distributed Systems, Cloud Architecture, DBMS, Operating Systems",
     ],
   },
   {
     id: "certifications",
     number: "05",
-    title: "Certifications",
-    subtitle: "Credentials & Achievements",
+    title: "Achievements",
+    subtitle: "Credentials & Milestones",
     description:
-      "Verified credentials, hackathon participation, and technical milestones. Translating continuous learning and competitive achievements into visual proof.",
+      "Verified competitive milestones, open source contributions, elite technical certifications, and hackathon recognitions validating continuous algorithmic and architectural excellence.",
     ascii: `
-    Community Rankings ──> LeetCode & GitHub
-                             │
-                      Hackathon Projects
-                             │
-                      Open Source Contributions
-                             │
-                      ┌──────┴──────┐
-                      │ Credentials │
-                      │ ┌──┬──┬──┐  │
-                      │ │✓ │✓ │✓ │  │
-                      │ └──┴──┴──┘  │
-                      └─────────────┘`,
+    SIH 2025 Shortlisted ──> Smart India Hackathon
+                                │
+                         LeetCode: 300+ Solved (thayanithi04)
+                                │
+                         1,500+ GitHub Commits
+                                │
+                         NPTEL Java Elite: 90%
+                                │
+                         ┌──────┴──────┐
+                         │ Credentials │
+                         │ ┌──┬──┬──┐  │
+                         │ │✓ │✓ │✓ │  │
+                         │ └──┴──┴──┘  │
+                         └─────────────┘`,
     specs: [
-      { label: "Competitive Coding", value: "LeetCode & HackerRank Developer Profiles" },
-      { label: "Hackathons", value: "Top rankings in local & state hackathons" },
-      { label: "Certifications", value: "Google Cloud, Fullstack React, Node.js Architectures" },
-      { label: "Open Source", value: "Active contributor to developer tools & templates" },
+      { label: "Smart India Hackathon", value: "Shortlisted on Waiting List for SIH 2025" },
+      { label: "LeetCode Mastery", value: "300+ Problems Solved (Profile: thayanithi04)" },
+      { label: "GitHub Velocity", value: "1,500+ Commits & Active Open-Source Maintainer" },
+      { label: "NPTEL Java Elite", value: "90% Elite Certification in System Design & Java" },
+      { label: "Sakthi Hackathon", value: "Finalist from a competitive pool of 1,000+ engineers" },
     ],
     commands: [
-      "$ pipeline --verify --credentials",
-      "Active certifications verified: OK",
-      "$ pipeline --dev-profiles",
-      "GitHub: thayanithi15 | LinkedIn: thayanithi15",
+      "$ query --achievements",
+      "SIH 2025: Solution architecture shortlisted for national evaluation.",
+      "LeetCode: 300+ algorithms optimized (thayanithi04).",
+      "GitHub: 1,500+ commits across fullstack & cloud platforms.",
+      "NPTEL: 90% (Elite) Object-Oriented Java & System Design.",
     ],
   },
   {
     id: "core-engineering",
     number: "06",
-    title: "Core Engineering",
-    subtitle: "Engineering Capabilities",
+    title: "Developer Tools",
+    subtitle: "Open-Source & Systems",
     description:
-      "Synthesizing scalable features and standardizing clean architectures. Optimizing API response times, secure authentication, and complex data collection mechanisms.",
+      "Designing developer tooling, open-source packages, and intelligent automation bots. High-performance runtime heuristics, execution profiling, and reliable scheduling engines.",
     ascii: `
-        REST APIs ──┐
-                    ├──[SECURE]──┐
-        JWT Auth  ──┘            │
-                                 ├──[SYNTHESIZED CORE]──> Production Ready
-        Web Scraping──┐          │
-                      ├──[TEST]──┘
-        BDD Testing ──┘
+        reqtimeline (npm) ──┐
+                            ├──[PERF PROFILER]──┐
+        P50/P99 Latency   ──┘                   │
+                                                ├──[PRODUCTION TOOLS]──> npm / Bot API
+        Telegram Bot      ──┐                   │
+                            ├──[CRON/TIMEZONE]──┘
+        MongoDB Polling   ──┘
  
-    Synthesis Matrix:
-    REST JWT Scraping BDD | Production Status
-    1    1   0        0   | Active API
-    1    1   1        1   | Robust Enterprise Platform`,
+    Profiling Metrics:
+    sub-ms execution | slow step detection | visual call tree`,
     specs: [
-      { label: "APIs & Services", value: "REST APIs, Web Scraping, JWT Auth" },
-      { label: "Testing Methods", value: "BDD Testing, Unit and Integration Suites" },
-      { label: "Performance", value: "Under 100ms API response latency" },
-      { label: "Security Mode", value: "Role-Based Access Control, JWT, SSL" },
+      { label: "reqtimeline (npm)", value: "Zero-dependency Express profiler, sub-ms tracking, P50-P99 latency scoring" },
+      { label: "Telegram Reminder Bot", value: "Persistent NLP time-query parser, MongoDB cron polling engine" },
+      { label: "AI/LLM Pipelines", value: "LangChain, RAG vector retrieval (ChromaDB, Pinecone), OpenAI API" },
+      { label: "Data Scale", value: "2+ Billion records processed across Google Cloud BigQuery & GCS" },
     ],
     commands: [
-      "$ synth --optimize --apis",
-      "Optimized express routes, query latency, database indexing.",
-      "$ simulate --testing-suite",
-      "BDD tests passed [100% success rate]",
-      "$ security-check --jwt-auth",
-      "HS256 signature validation: SECURE",
+      "$ npx reqtimeline --status",
+      "Express request lifecycle tracking active. Sub-millisecond step profiling: OK",
+      "$ bot --status telegram-reminder",
+      "Fault-tolerant node-cron polling operational with Luxon timezone resolution.",
     ],
   },
   {
     id: "system-architecture",
     number: "07",
     title: "System Architecture",
-    subtitle: "Concurrency & Infrastructure",
+    subtitle: "Cloud & Concurrency",
     description:
-      "Designing responsive interfaces and high-throughput backends. Coordinating non-blocking asynchronous event loops, reactive states, and cross-platform native thread handling.",
+      "Architecting resilient multi-cloud infrastructures on AWS and GCP with automated zero-downtime CI/CD pipelines, WebSocket peer streams, and non-blocking asynchronous runtimes.",
     ascii: `
-    Next.js CSR/SSR ──┐         ┌── React Native Threads
+    Next.js SSR/ISR ──┐         ┌── AWS EC2 / Lambda
                       │         │
-    Node.js EventLoop ┼──[ENG]──┼── Express APIs
+    Node.js EventLoop ┼──[ENG]──┼── GCP VMs & BigQuery
                       │    │    │
-    Zustand Store     ──┘    │    └── GCP Microservices
+    WebSockets/WebRTC ──┘    │    └── Zero-Downtime CI/CD
                            │
                      ┌─────┴─────┐
                      │ Parallel  │
-                     │ Execution │
+                     │ Workloads │
                      │ [|||||||] │
                      └───────────┘`,
     specs: [
-      { label: "Web Concurrency", value: "Next.js SSR, React Concurrent Rendering" },
-      { label: "State Hydration", value: "Zustand, Redux, Context Providers" },
-      { label: "Async Runtimes", value: "Node.js cluster, asynchronous worker threads" },
-      { label: "Mobile Threading", value: "React Native Bridge, Native Modules" },
+      { label: "Cloud Infra", value: "AWS (EC2, Lambda, S3, IAM, CloudWatch) & GCP (Compute Engine, GCS, BigQuery)" },
+      { label: "CI/CD & DevOps", value: "GitHub Actions automated pipelines, Nginx reverse proxy, Cloudflare edge" },
+      { label: "Real-Time & AI", value: "WebRTC peer engine, WebSockets, RAG vector embeddings, AI proctoring" },
+      { label: "Data Throughput", value: "2B+ records ingested, 40% report speedup, sub-100ms API latency" },
     ],
     commands: [
-      "$ runtime --inspect --concurrency",
-      "Analyzing active state changes and event streams...",
-      "Zustand store operational, atomic state updates: 0ms lag",
-      "$ performance-test --load 5000rps",
-      "Node.js cluster workload distribution: STABLE",
+      "$ infra --inspect --aws",
+      "AWS EC2 instances & Lambda serverless triggers: HEALTHY",
+      "$ cicd --verify github-actions",
+      "Automated zero-downtime test & deployment pipeline: PASSING",
     ],
   },
   {
     id: "featured-projects",
     number: "08",
     title: "Featured Projects",
-    subtitle: "Selected Works & SaaS",
+    subtitle: "Selected Works & Products",
     description:
-      "The portfolio registry. Direct access to production-ready SaaS dashboards, secure machine portals, community networks, and developer tools built with cutting-edge tech stacks.",
+      "Enterprise systems, intelligent AI/LLM ecosystems, industrial control portals, tourist safety applications, and quick commerce analytics platforms.",
     ascii: `
     ┌──────────────────────────────────────────┐
-    │     THAYANITHI S - FEATURED PROJECTS     │
+    │     THAYANITHI S - FEATURED PRODUCTS     │
     ├──────────────────────────────────────────┤
-    │     CNC VAULT - SECURE CONTROL HUB       │
+    │     AETHERA - AI LEARNING & RAG SYSTEM   │
     ├──────────────────────────────────────────┤
-    │     PROGRESS IQ - REAL-TIME MONITORING   │
+    │     CNC VAULT - INDUSTRIAL PARAMETER HUB │
+    ├──────────────────────────────────────────┤
+    │     DEV RANK - AI DEVELOPER BENCHMARK    │
+    ├──────────────────────────────────────────┤
+    │     SAHA YATRI - TOURIST SAFETY (SIH 25) │
     ├──────────────────────────────────────────┤
     │     EQ REV - QUICK COMMERCE ANALYTICS    │
     ├──────────────────────────────────────────┤
-    │     BITLINKS - COMMUNITY NETWORK         │
-    ├──────────────────────────────────────────┤
-    │     DEV RANK - DEVELOPER RANKING         │
+    │     REQTIMELINE - NPM EXPRESS PROFILER   │
     └──────────────────────────────────────────┘`,
     specs: [
-      { label: "CNC Vault", value: "Next.js, TypeScript, Node.js, Express.io, MongoDB, GCP, shadcn/ui" },
-      { label: "Progress IQ", value: "Next.js, Socket.io, AI Analytics, TypeScript, Node.js, MongoDB" },
-      { label: "EQ REV", value: "React.js, Chart.js, Recharts, Tailwind CSS, Hero UI, Zustand" },
-      { label: "Bitlinks", value: "Next.js, Framer Motion, Tailwind CSS, TypeScript, Vercel" },
-      { label: "Dev Rank", value: "Next.js, Rapid API, Data Scraping, Tailwind CSS, TypeScript" },
+      { label: "Aethera", value: "React, Node.js, AWS (EC2/Lambda), RAG, LangChain, WebRTC, AI Proctoring" },
+      { label: "CNC Vault", value: "Next.js, TypeScript, Express, MongoDB, Google Cloud Storage (70% Reliability Up)" },
+      { label: "Dev Rank", value: "Next.js, TypeScript, Express, MongoDB, GitHub/LeetCode Scrapers, LLM Scoring" },
+      { label: "Saha Yatri", value: "React Native, Leaflet Maps, Gradle, REST APIs, i18n, SOS Telemetry (SIH 2025)" },
+      { label: "Eq Rev", value: "React.js, Node.js, Express, Google BigQuery, Cloudflare, Zepto/Blinkit/Instamart" },
+      { label: "reqtimeline", value: "Node.js, Express, CLI, Performance Heuristics (Published on npm)" },
     ],
     commands: [
-      "$ hal query --device cnc-vault",
-      "CNC Vault: https://cnc-machines.vercel.app/",
-      "$ hal query --device progress-iq",
-      "Progress IQ: https://progress-iq.vercel.app/",
-      "$ hal query --device eqrev",
-      "EQ REV: https://app.eqrev.com/",
-      "$ hal query --device bitlinks",
-      "Bitlinks: https://bitlinks.bitsathy.ac.in/",
-      "$ hal query --device dev-rank",
-      "Dev Rank: GitHub / LeetCode ranking dashboard",
+      "$ product inspect aethera",
+      "Aethera: Adaptive RAG Tutor, Web IDE, AI vision proctoring & WebRTC peer engine.",
+      "$ product inspect cnc-vault",
+      "CNC Vault: Centralized backup & parameter system lifting reliability by 70%.",
+      "$ product inspect saha-yatri",
+      "Saha Yatri: SIH 2025 tourist safety app with 1-touch SOS & Leaflet map tracking.",
+      "$ product inspect reqtimeline",
+      "reqtimeline: npm install reqtimeline - sub-ms request lifecycle profiler.",
     ],
   },
 ]

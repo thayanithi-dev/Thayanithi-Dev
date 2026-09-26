@@ -96,9 +96,10 @@ function TerminalShowcase() {
 
   const setupScript = [
     "initializing portfolio_env...",
-    "systems_engineer: Thayanithi S",
-    "domain: Fullstack / Mobile / Backend Architect",
-    "status: OPERATIONAL",
+    "engineer: Thayanithi S",
+    "domain: Full Stack, AI/LLMs & Cloud Infra",
+    "cloud_pipelines: AWS (EC2/Lambda), GCP, CI/CD",
+    "status: OPERATIONAL [2B+ records ingested]",
   ]
 
   // Typing effect
@@ -253,14 +254,14 @@ export function HeroSection() {
             <DecryptedText text="Thayanithi S" delay={600} speed={40} />
             <br />
             <span className="text-muted-foreground text-3xl text-wrap md:text-nowrap sm:text-5xl md:text-6xl lg:text-7xl block mt-2 leading-[1.1] font-semibold">
-              <DecryptedText text="SDE & Infra Engineer" delay={1200} speed={25} />
+              <DecryptedText text="Full Stack & Cloud Engineer" delay={1200} speed={25} />
             </span>
           </h1>
 
           <p className="max-w-prose font-mono text-sm leading-relaxed text-muted-foreground md:text-base">
-            Architecting raw logic into refined, high-performance systems.
+            Designing resilient distributed architectures, AI/LLM platforms, and automated cloud pipelines on AWS & GCP.
             <br className="hidden md:block" />
-            Specializing in distributed backend architectures, cross-platform mobile apps, and robust fullstack engineering.
+            Specializing in RAG systems, high-volume data streams (2B+ records), zero-downtime CI/CD, and developer tooling.
           </p>
         </motion.div>
 

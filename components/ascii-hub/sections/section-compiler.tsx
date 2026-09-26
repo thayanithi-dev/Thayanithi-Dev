@@ -112,51 +112,59 @@ const learningStages = [
 const timelineMilestones = [
   {
     year: "2023",
-    title: "Academic Beginnings",
+    title: "Academic Foundation",
     subtitle: "Bannari Amman Institute of Tech",
-    description: "Started B.E. CSE, building core programming logic via C and Java.",
+    description: "Started B.E. CSE (8.09 CGPA), mastering core algorithms, data structures & systems design.",
     type: "EDU",
     badge: "CSE Major"
   },
   {
     year: "2024",
-    title: "Software Engineer Intern",
+    title: "Full Stack Engineer",
     subtitle: "Crayon'd (Sep 24 – Apr 25)",
-    description: "Developed client products with responsive React and Express APIs.",
+    description: "Built 2+ client Next.js applications with BDD testing, accelerating feature delivery by 20%.",
     type: "EXP",
-    badge: "Internship"
+    badge: "Full Stack"
   },
   {
     year: "2024",
-    title: "Launched BITLINKS",
-    subtitle: "Community Network Platform",
-    description: "Designed a community networking platform for students.",
+    title: "CNC Vault & Aethera",
+    subtitle: "Industrial Hub & AI RAG Ecosystem",
+    description: "Architected centralized CNC backup system (70% reliability up) and adaptive AI RAG tutor.",
     type: "PROJECT",
-    badge: "Next.js"
+    badge: "AI & Infra"
   },
   {
     year: "2025",
-    title: "Software Engineer",
-    subtitle: "EQREV (Jan 25 – Dec 25)",
-    description: "Engineered quick-commerce SaaS dashboards for Zepto, Blinkit & Instamart.",
+    title: "Software Developer",
+    subtitle: "Eqrev (Jan 25 – Dec 25)",
+    description: "Engineered SaaS analytics across 1,000+ stores for Zepto, Blinkit & Swiggy Instamart.",
     type: "EXP",
-    badge: "SaaS Engine"
+    badge: "SaaS & Data"
   },
   {
     year: "2025",
-    title: "Sakthi Hackathon Finalist",
-    subtitle: "24h National Level Hackathon",
-    description: "Designed systems under 24-hr constraints with exceptional problem solving.",
+    title: "SIH 2025 & Sakthi Hackathon",
+    subtitle: "National Level Recognitions",
+    description: "Shortlisted on SIH 2025 waiting list & Finalist at Sakthi Hackathon among 1,000+ competitors.",
     type: "AWARD",
-    badge: "Finalist"
+    badge: "Hackathon"
+  },
+  {
+    year: "2025",
+    title: "Frontend Engineer",
+    subtitle: "ThinkUni (Oct 25 – Jan 26)",
+    description: "Engineered client-side features and 30+ RBAC components for 1,000+ active users.",
+    type: "EXP",
+    badge: "Social Platform"
   },
   {
     year: "2026",
-    title: "Frontend Developer",
-    subtitle: "Thinkuni (Sep 25 – Jan 26)",
-    description: "Built Vue.js learning analytics and interactive dashboards.",
+    title: "DevOps & Cloud Infra Intern",
+    subtitle: "Eqrev (Jun 26 – Dec 26)",
+    description: "Automated CI/CD pipelines & orchestrated ETL pipelines handling 2+ billion records on GCP.",
     type: "EXP",
-    badge: "Interactive UI"
+    badge: "BigQuery / Infra"
   }
 ]
 
@@ -221,7 +229,7 @@ export function SectionCompiler({ section }: { section: TechSection }) {
                 </div>
                 <div>
                   <span className="text-muted-foreground block text-[9px] uppercase tracking-wider">Overall CGPA</span>
-                  <span className="font-bold text-foreground text-xs sm:text-sm">8.2 / 10.0</span>
+                  <span className="font-bold text-foreground text-xs sm:text-sm">8.09 / 10.0</span>
                 </div>
                 <div>
                   <span className="text-muted-foreground block text-[9px] uppercase tracking-wider">12th Grade</span>

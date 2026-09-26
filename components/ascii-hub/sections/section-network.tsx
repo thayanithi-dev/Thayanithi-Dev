@@ -53,47 +53,56 @@ const techItemLogos: Record<string, any> = {
 
 const nodes = [
   { id: "LANG", name: "Languages", x: 15, y: 20, status: "active", items: [
+    { name: "Java", pct: 90 },
+    { name: "Python", pct: 90 },
     { name: "TypeScript", pct: 95 },
     { name: "JavaScript", pct: 95 },
-    { name: "Python", pct: 80 },
-    { name: "Java", pct: 75 },
-    { name: "C", pct: 70 }
+    { name: "C", pct: 85 },
+    { name: "SQL", pct: 85 }
   ]},
-  { id: "WEB", name: "Frontend", x: 50, y: 15, status: "active", items: [
+  { id: "AI_LLM", name: "AI & LLM Stack", x: 50, y: 15, status: "active", items: [
+    { name: "RAG Architectures", pct: 90 },
+    { name: "LangChain", pct: 90 },
+    { name: "LlamaIndex", pct: 85 },
+    { name: "Vector DBs (Chroma/Pinecone)", pct: 85 },
+    { name: "OpenAI API & Prompt Eng", pct: 95 },
+    { name: "Semantic Search", pct: 85 }
+  ]},
+  { id: "FRONT", name: "Frontend", x: 85, y: 20, status: "active", items: [
     { name: "Next.js", pct: 95 },
     { name: "React.js", pct: 95 },
-    { name: "Vue.js", pct: 80 },
-    { name: "Tailwind CSS", pct: 90 },
-    { name: "Framer Motion", pct: 85 }
-  ]},
-  { id: "MOBL", name: "Mobile", x: 85, y: 20, status: "active", items: [
     { name: "React Native", pct: 90 },
-    { name: "Flutter", pct: 75 }
+    { name: "Tailwind CSS", pct: 95 },
+    { name: "Vue.js", pct: 80 },
+    { name: "Redux Toolkit / Zustand", pct: 90 }
   ]},
   { id: "BACK", name: "Backend", x: 50, y: 50, status: "active", items: [
     { name: "Node.js", pct: 95 },
-    { name: "Express.js", pct: 90 },
-    { name: "Fastify", pct: 80 },
-    { name: "REST APIs", pct: 95 },
-    { name: "JWT Auth", pct: 90 }
+    { name: "Express.js", pct: 95 },
+    { name: "Fastify", pct: 85 },
+    { name: "RESTful APIs", pct: 95 },
+    { name: "WebSockets", pct: 90 },
+    { name: "JWT & Microservices", pct: 90 }
   ]},
   { id: "DATA", name: "Databases", x: 20, y: 80, status: "active", items: [
-    { name: "MongoDB", pct: 90 },
+    { name: "PostgreSQL", pct: 90 },
+    { name: "MongoDB", pct: 95 },
     { name: "MySQL", pct: 85 },
-    { name: "PostgreSQL", pct: 85 },
-    { name: "Prisma", pct: 85 },
-    { name: "Sequelize", pct: 80 }
+    { name: "Sequelize", pct: 80 },
+    { name: "Web Scraping", pct: 90 }
   ]},
-  { id: "CLOD", name: "Cloud Stack", x: 50, y: 80, status: "active", items: [
-    { name: "Google Cloud", pct: 80 },
-    { name: "BigQuery", pct: 75 }
+  { id: "CLOD", name: "Cloud & Infra", x: 50, y: 80, status: "active", items: [
+    { name: "AWS (EC2, Lambda, S3)", pct: 90 },
+    { name: "GCP (GCS, BigQuery, VMs)", pct: 90 },
+    { name: "Docker & Virtual Machines", pct: 85 },
+    { name: "CloudWatch & IAM", pct: 85 }
   ]},
-  { id: "TOOL", name: "Dev Tools", x: 80, y: 80, status: "active", items: [
-    { name: "Git", pct: 90 },
-    { name: "GitHub", pct: 90 },
-    { name: "VS Code", pct: 95 },
-    { name: "Postman", pct: 90 },
-    { name: "Web Scraping", pct: 85 }
+  { id: "DEVOPS", name: "DevOps & Tools", x: 80, y: 80, status: "active", items: [
+    { name: "GitHub Actions CI/CD", pct: 95 },
+    { name: "Nginx & Cloudflare", pct: 90 },
+    { name: "Linux & Git", pct: 95 },
+    { name: "Postman", pct: 95 },
+    { name: "Figma & BDD Testing", pct: 85 }
   ]},
 ]
 
