@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { Github, Twitter, Linkedin, ArrowUp } from "lucide-react"
+import { Github, Twitter, Linkedin, ArrowUp, Code2, Instagram } from "lucide-react"
 import Link from "next/link"
 
 const ASCII_LOGO = `
@@ -16,8 +16,9 @@ const ASCII_LOGO = `
 const socialLinks = [
   { name: "GitHub", icon: Github, href: "https://github.com/thayanithi-dev" },
   { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/thayanithi15" },
+  { name: "LeetCode", icon: Code2, href: "https://leetcode.com/u/thayanithi04/" },
   { name: "Twitter / X", icon: Twitter, href: "https://x.com/Thayanithi887" },
-  { name: "Instagram", icon: Github, href: "https://www.instagram.com/thayanithi_15" },
+  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/thayanithi_15" },
 ]
 
 export function Footer() {
@@ -73,7 +74,7 @@ export function Footer() {
             <div className="mt-4 font-mono text-xs leading-relaxed text-muted-foreground">
               <p className="italic">"The best way to predict the future is to create it."</p>
               <p className="mt-1 font-bold text-foreground text-right">- Peter Drucker</p>
-              <p className="mt-3 text-[11px]">Fueled by ∞ cups of coffee & passion for code</p>
+              <p className="mt-3 text-[11px]">Building resilient distributed systems, AI/RAG platforms & high-throughput cloud pipelines.</p>
             </div>
           </motion.div>
 
@@ -88,8 +89,9 @@ export function Footer() {
               Connect & Contact
             </span>
             <div className="mb-4 font-mono text-xs text-muted-foreground">
-              <p>Namakkal, Tamil Nadu, India</p>
+              <p>Namakkal / Sathyamangalam, Tamil Nadu, India</p>
               <p className="mt-1"><a href="mailto:thayanithi2006s@gmail.com" className="hover:text-foreground">thayanithi2006s@gmail.com</a></p>
+              <p className="mt-1"><a href="tel:+919025391287" className="hover:text-foreground">+91-9025391287</a></p>
             </div>
             <div className="flex flex-col gap-2">
               {socialLinks.map((link) => (
@@ -123,7 +125,7 @@ export function Footer() {
                 Domain Stack
               </span>
               <div className="flex flex-wrap gap-2">
-                {["Next.js", "React Native", "Node.js", "Express.io", "MongoDB", "GCP", "Tailwind"].map(
+                {["Next.js", "React.js", "Node.js", "Python / Java", "AWS / GCP", "RAG & LLMs", "BigQuery / SQL", "Docker"].map(
                   (tech) => (
                     <span
                       key={tech}

@@ -3,29 +3,32 @@
 import { motion } from "framer-motion"
 
 const TECH_ITEMS = [
-  "TypeScript",
-  "JavaScript",
-  "C",
   "Java",
   "Python",
+  "TypeScript",
+  "JavaScript",
+  "RAG Architectures",
+  "LangChain",
+  "Vector DBs (Chroma/Pinecone)",
+  "OpenAI API",
+  "AWS (EC2 / Lambda)",
+  "GCP (GCS / BigQuery)",
   "Next.js",
   "React.js",
   "React Native",
-  "Flutter",
-  "Tailwind CSS",
-  "Framer Motion",
   "Node.js",
   "Express.js",
   "Fastify",
+  "Docker",
+  "GitHub Actions CI/CD",
+  "PostgreSQL",
   "MongoDB",
   "MySQL",
-  "PostgreSQL",
-  "Prisma",
-  "Google Cloud",
-  "BigQuery",
-  "Git",
-  "REST APIs",
-  "JWT Auth"
+  "Cloudflare",
+  "WebSockets",
+  "WebRTC",
+  "RESTful APIs",
+  "reqtimeline (npm)"
 ]
 
 export function TechTicker() {

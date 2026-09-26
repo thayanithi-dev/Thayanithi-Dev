@@ -68,6 +68,85 @@ export interface ProjectDetail {
 }
 
 export const projectsData: Record<string, ProjectDetail> = {
+  "aethera": {
+    slug: "aethera",
+    assetPrefix: "AETHERA",
+    level: "PROJ_05",
+    name: "AETHERA",
+    tagline: "INTELLIGENT LEARNING & AI ASSESSMENT ECOSYSTEM",
+    category: "AI Systems / Educational Cloud Ecosystem",
+    timeline: "May 2024 – Present",
+    role: "Lead Fullstack & AI Cloud Architect",
+    status: "ACTIVE_DEVELOPMENT",
+    url: "https://github.com/thayanithi-dev",
+    githubUrl: "https://github.com/thayanithi-dev",
+    shortDesc: "Scalable AI learning ecosystem featuring adaptive RAG tutoring, integrated web IDE, AI vision proctoring, Skill Radar analytics, and low-latency WebRTC peer messaging.",
+    fullDescription: "Aethera is a comprehensive cloud-native learning and AI assessment ecosystem. Deployed on AWS EC2 virtual machines backed by serverless AWS Lambda triggers and automated GitHub Actions CI/CD pipelines, Aethera combines an adaptive RAG Tutor (LangChain + vector embeddings), a real-time web IDE, computer vision malpractice detection in Java and Python, and low-latency encrypted WebRTC peer communication.",
+    problemStatement: "Traditional learning management systems lack contextual, personalized AI guidance, secure automated code assessment with malpractice prevention, and integrated real-time peer collaboration.",
+    solutionOverview: "Architected a distributed fullstack platform uniting LangChain RAG vector retrieval, computer vision proctoring models, automated CI/CD deployment on AWS, and WebSockets/WebRTC for interactive code execution and peer study sessions.",
+    image: progressiq1Img,
+    gallery: [progressiq1Img, progressiq2Img, progressiq3Img],
+    metrics: [
+      { label: "Deployment Uptime", value: "99.9%", description: "Zero-downtime CI/CD releases on AWS EC2 & Lambda" },
+      { label: "RAG Retrieval Speed", value: "< 250ms", description: "Sub-second contextual response with vector embeddings" },
+      { label: "Proctoring Vision", value: "Java & Python", description: "Real-time automated code evaluation & malpractice detection" },
+      { label: "WebRTC Latency", value: "< 45ms", description: "Low-latency encrypted peer audio/video and messaging" }
+    ],
+    keyFeatures: [
+      {
+        title: "Adaptive RAG Tutor & Web IDE",
+        description: "Contextual vector retrieval engine using LangChain and embeddings for personalized quiz generation and interactive documentation Q&A."
+      },
+      {
+        title: "AI Proctoring Vision Pipeline",
+        description: "Automated vision evaluation pipeline detecting malpractice signals and evaluating code execution in Java and Python."
+      },
+      {
+        title: "Skill Radar Analytics Dashboard",
+        description: "Multi-dimensional performance visualization mapping learner velocity, conceptual mastery, and code proficiency."
+      },
+      {
+        title: "WebRTC Encrypted Peer Engine",
+        description: "Low-latency WebSocket & WebRTC peer mesh enabling real-time multi-user study rooms, media sharing, and video sessions."
+      }
+    ],
+    techStack: [
+      { category: "Frontend & Realtime", items: ["React.js", "Next.js", "WebRTC", "Socket.io", "Tailwind CSS", "Framer Motion"] },
+      { category: "AI & LLM Pipeline", items: ["LangChain", "Vector Databases", "OpenAI API", "Semantic Search", "Prompt Engineering"] },
+      { category: "Backend Architecture", items: ["Node.js", "Express.js", "Python FastAPIs", "JWT Auth", "REST APIs"] },
+      { category: "Cloud & DevOps", items: ["AWS (EC2, Lambda, S3)", "GitHub Actions CI/CD", "Docker", "CloudWatch"] }
+    ],
+    architectureAscii: `
+ ┌────────────────────────────────────────────────────────────────────────┐
+ │                          AETHERA ARCHITECTURE                          │
+ ├────────────────────────────────────────────────────────────────────────┤
+ │  Learning Portal & Web IDE (React.js + WebRTC + Skill Radar Canvas)    │
+ │  ├── Adaptive RAG Tutor Query Interface                                │
+ │  └── Realtime Code Execution Console                                   │
+ └───────────────────────────────────┬────────────────────────────────────┘
+                                     │ (WSS / WebRTC / REST)
+ ┌───────────────────────────────────▼────────────────────────────────────┐
+ │  AWS Cloud Compute Tier & AI Microservices                             │
+ │  ├── AWS EC2 (Node.js API Gateway & WebRTC Signaling Engine)          │
+ │  ├── Serverless AWS Lambda (Async Proctoring & AI Evaluation)          │
+ │  └── LangChain Vector Retrieval Pipeline (ChromaDB / Embeddings)       │
+ └───────────────────────────────────┬────────────────────────────────────┘
+                                     │
+ ┌───────────────────────────────────▼────────────────────────────────────┐
+ │  Data & Storage Layer                                                  │
+ │  ├── MongoDB Atlas (User Profiles, Learning Paths, Assessments)        │
+ │  └── AWS S3 (Session Recordings, Proctoring Logs & Artifacts)          │
+ └────────────────────────────────────────────────────────────────────────┘`,
+    terminalLogs: [
+      "$ aethera-engine status --aws-cluster",
+      "[SYS_HEALTH] AWS EC2 Instances: 2 Active | Lambda Handlers: HEALTHY",
+      "$ aethera-engine rag query --topic 'Distributed Consensus in Go'",
+      "[RAG_PIPELINE] Vector embedding matched in 185ms (Similarity: 0.94)",
+      "$ aethera-engine proctor --eval-session live",
+      "[VISION_PROCTOR] Signal scan completed: 0 Malpractice indicators",
+      "[SUCCESS] Aethera intelligent learning ecosystem running."
+    ]
+  },
   "cnc-vault": {
     slug: "cnc-vault",
     assetPrefix: "CNC",
@@ -76,32 +155,33 @@ export const projectsData: Record<string, ProjectDetail> = {
     tagline: "INDUSTRIAL CNC MACHINERY CONTROL HUB & SECURE PROGRAM VAULT",
     category: "Industrial IoT / Machine Control Hub",
     timeline: "2024 – 2025",
-    role: "Full Stack Developer",
+    role: "Full Stack & Cloud Developer",
     status: "PRODUCTION_ONLINE",
     url: "https://cnc-machines.vercel.app/",
-    shortDesc: "Secure access to centralized machine programs, PLC logic, and configuration management for industrial CNC machinery. Improved operational efficiency by 70%.",
-    fullDescription: "CNC Vault is an industrial-grade cloud management platform built to centralize, version-control, and secure G-code machine programs and PLC logic parameters across manufacturing plants. Designed for precision engineering facilities, CNC Vault replaces error-prone USB transfers with encrypted, audited cloud distribution.",
+    githubUrl: "https://github.com/thayanithi-dev",
+    shortDesc: "Enterprise CNC/PLC backup system with automated version control, role-based machine assignment, and conflict-handling workflows on Google Cloud Storage (GCS). Lifted reliability by 70%.",
+    fullDescription: "CNC Vault is an industrial-grade cloud management platform built to centralize, version-control, and secure G-code machine programs and PLC logic parameters across manufacturing plants. Designed for precision engineering facilities, CNC Vault replaces error-prone USB transfers with encrypted, audited cloud distribution on Google Cloud Storage.",
     problemStatement: "Manufacturing facilities suffer from machine program version mismatches, unauthorized G-code modifications, machine downtime during transfers, and lack of revision history.",
-    solutionOverview: "Engineered a web application with Next.js, Express.io, MongoDB, and GCP that maintains cryptographic hashes of machine code, enforces strict machine-operator permission matrices, and streamlines program deployments.",
+    solutionOverview: "Engineered a web application with Next.js, Express, MongoDB, and GCS that maintains cryptographic hashes of machine code, enforces strict machine-operator permission matrices, and streamlines program deployments.",
     image: cnc1Img,
     gallery: [cnc1Img, cnc2Img, cnc3Img, cnc4Img, cnc5Img, cnc6Img],
     metrics: [
-      { label: "Operational Efficiency", value: "+70%", description: "Reduction in setup & program retrieval time" },
+      { label: "Operational Reliability", value: "+70%", description: "Increase in manufacturing uptime & program integrity" },
       { label: "Machine Downtime", value: "-45%", description: "Eliminated program mismatch machine crashes" },
       { label: "Machine Compatibility", value: "Universal", description: "Supports Fanuc, Siemens, Haas & Heidenhain G-code" },
-      { label: "Security Encryption", value: "AES-256", description: "Encrypted program storage & hash audit trails" }
+      { label: "Cloud Security", value: "AES-256 / GCS", description: "Encrypted GCS storage & SHA-256 audit trails" }
     ],
     keyFeatures: [
       {
-        title: "G-Code Version Control",
-        description: "Complete revision tracking for NC and PLC programs with side-by-side diff viewers and instant rollbacks."
+        title: "G-Code Version Control & Conflict Handling",
+        description: "Complete revision tracking for NC and PLC programs with side-by-side diff viewers, conflict resolution, and instant rollbacks."
       },
       {
         title: "Role-Based Machine Assignment",
         description: "Granular authorization matrix ensuring operators can only execute verified, engineer-approved program hashes."
       },
       {
-        title: "Machine Status & Maintenance Alerting",
+        title: "Real-time Diagnostics & Failure Alerts",
         description: "Live dashboard tracking machine availability, active program assignments, and scheduled maintenance windows."
       },
       {
@@ -111,8 +191,8 @@ export const projectsData: Record<string, ProjectDetail> = {
     ],
     techStack: [
       { category: "Web Stack", items: ["Next.js (App Router)", "TypeScript", "Tailwind CSS", "shadcn/ui", "Lucide Icons"] },
-      { category: "Backend Systems", items: ["Node.js", "Express.io", "GCP Compute Engine", "REST API Layer"] },
-      { category: "Database & Storage", items: ["MongoDB Atlas", "GridFS Binary Vault", "AES File Encryption"] },
+      { category: "Backend Systems", items: ["Node.js", "Express.js", "GCP Compute Engine", "REST API Layer"] },
+      { category: "Database & Storage", items: ["MongoDB Atlas", "Google Cloud Storage (GCS)", "AES-256 File Encryption"] },
       { category: "DevOps & Cloud", items: ["Google Cloud Platform", "Vercel", "GitHub Actions CI/CD"] }
     ],
     architectureAscii: `
@@ -125,7 +205,7 @@ export const projectsData: Record<string, ProjectDetail> = {
  └───────────────────────────────────┬────────────────────────────────────┘
                                      │ (HTTPS REST + Hash Verification)
  ┌───────────────────────────────────▼────────────────────────────────────┐
- │  Express.io Backend Service & Secure Hash Verification Vault          │
+ │  Express Backend Service & Secure Hash Verification Vault              │
  │  ├── Encryption Engine: AES-256 G-Code File Cipher                    │
  │  ├── Audit Log Engine: Operator Action & Hash Tracker                 │
  │  └── Access Controller: Role & Machine ID RBAC                       │
@@ -144,117 +224,186 @@ export const projectsData: Record<string, ProjectDetail> = {
       "[HASH_CHECK] Match Status: VERIFIED (100% Integrity)",
       "$ cnc-vault audit --latest",
       "[AUDIT_LOG] Operator #402 loaded NC_PART_8892 to Haas VF-2 SS",
-      "[SUCCESS] CNC Machine Vault operational."
+      "[SUCCESS] CNC Machine Vault operational (70% reliability boost)."
     ]
   },
-  "progress-iq": {
-    slug: "progress-iq",
-    assetPrefix: "PROGRESSIQ",
+  "dev-rank": {
+    slug: "dev-rank",
+    assetPrefix: "DEVRANK",
     level: "PROJ_03",
-    name: "PROGRESS IQ",
-    tagline: "REAL-TIME ACTIVITY MONITORING & TEAM ANALYTICS PLATFORM",
-    category: "Real-time Monitoring / Enterprise Analytics",
-    timeline: "2025 – Present",
-    role: "Lead Fullstack & Systems Engineer",
+    name: "DEV RANK",
+    tagline: "AI-POWERED DEVELOPER RANKING & BENCHMARKING PLATFORM",
+    category: "Developer Tools / AI Benchmarking",
+    timeline: "2024 – 2025",
+    role: "Lead Fullstack Developer",
     status: "PRODUCTION_ONLINE",
-    url: "https://progress-iq.vercel.app/",
-    shortDesc: "Monitor daily activities and task updates instantly across teams with live sync. Features AI-driven insights to measure productivity, role-based access control, and centralized collaboration workspace.",
-    fullDescription: "Progress IQ is a high-performance, real-time activity monitoring and team analytics dashboard designed to eliminate visibility bottlenecks in distributed development and operations teams. Built with Next.js, Socket.io, and AI-driven data aggregation models, Progress IQ tracks daily tasks, operational metrics, and team output in real time.",
-    problemStatement: "Distributed teams often suffer from fragmented reporting, asynchronous communication delays, and lack of real-time visibility into project velocity and team throughput.",
-    solutionOverview: "Engineered a unified monitoring engine featuring WebSocket-based live telemetry sync, automated AI productivity summary reports, and granular role-based access control (RBAC) to ensure operational clarity without micro-management.",
-    image: progressiq1Img,
-    gallery: [
-      progressiq1Img,
-      progressiq2Img,
-      progressiq3Img,
-      progressiq4Img,
-      progressiq5Img,
-      progressiq6Img,
-    ],
+    url: "http://dev-rank.vercel.app/",
+    githubUrl: "https://github.com/thayanithi-dev",
+    shortDesc: "Developer benchmarking engine collecting GitHub and LeetCode activity using secure OTP-verified scrapers and LLM scoring heuristics for candidate-recruiter discovery.",
+    fullDescription: "Dev Rank is an AI-powered developer profile aggregation and ranking platform. By integrating external APIs and web scraping routines, Dev Rank synthesizes developer activity across GitHub and LeetCode into unified engineering rank scores using LLM scoring heuristics, powering automated talent discovery.",
+    problemStatement: "Recruiters and community leads lack a single objective metric to compare a developer's real-world code contributions alongside algorithmic problem-solving skills.",
+    solutionOverview: "Constructed a profile parser and ranking engine with Next.js, Express, MongoDB, and LLMs that computes normalized rank metrics based on commit history, repository stars, codebase structure, and LeetCode problem difficulty.",
+    image: devrank1Img,
+    gallery: [devrank1Img, devrank2Img, devrank3Img, devrank4Img, devrank5Img, devrank6Img],
     metrics: [
-      { label: "Live Telemetry Sync", value: "< 50ms", description: "Real-time event propagation delay" },
-      { label: "Productivity Gains", value: "+35%", description: "Reported team task completion rate improvement" },
-      { label: "Active Roles Managed", value: "Multi-Tier", description: "Admin, Manager, Developer & Auditor RBAC" },
-      { label: "Data Integrity", value: "99.9%", description: "Automated audit trail & state snapshot synchronization" }
+      { label: "Profile Sources", value: "GitHub & LeetCode", description: "Aggregated coding & algorithmic metrics" },
+      { label: "LLM Heuristics", value: "Codebase Analysis", description: "Evaluates architectural structure & algorithmic quality" },
+      { label: "Scraping Latency", value: "< 1.2s", description: "Secure, OTP-verified web scrapers" },
+      { label: "Recruiter Discovery", value: "Automated", description: "Connecting top verified engineering talent" }
     ],
     keyFeatures: [
       {
-        title: "Real-Time WebSocket Sync",
-        description: "Instant bi-directional state synchronization across client sessions using Socket.io and optimized pub-sub handlers."
+        title: "Multi-Platform Profile Fetcher",
+        description: "Secure web scraping engine gathering public metrics from GitHub repositories and LeetCode profile APIs."
       },
       {
-        title: "AI-Powered Velocity Insights",
-        description: "Intelligent analytics engine that aggregates project telemetry to calculate productivity trends and workload bottlenecks."
+        title: "LLM Scoring Heuristics",
+        description: "AI-powered scoring formula evaluating codebase design patterns, documentation quality, and problem-solving mastery."
       },
       {
-        title: "Role-Based Access Control (RBAC)",
-        description: "Secure permission hierarchy specifying workspace visibility, project mutation rights, and telemetry reporting access."
+        title: "Recruiter Discovery Hub",
+        description: "Filterable community leaderboards enabling instant searching by stack, ranking tier, or institution."
       },
       {
-        title: "Centralized Workspace Hub",
-        description: "Unified interface for tracking tasks, sprint progress, operational activity logs, and real-time developer status updates."
+        title: "Visual Badge Generator",
+        description: "Embeddable SVG cards displaying rank metrics for developer README profiles."
       }
     ],
     techStack: [
-      { category: "Frontend Framework", items: ["Next.js 14 (App Router)", "TypeScript", "Tailwind CSS", "Framer Motion", "Zustand"] },
-      { category: "Backend & Realtime", items: ["Node.js", "Express.js", "Socket.io Engine", "REST Endpoints"] },
-      { category: "Database & Storage", items: ["MongoDB Atlas", "Mongoose ORM", "Redis Caching Layer"] },
-      { category: "AI & Infrastructure", items: ["Vercel Edge Platform", "AI Analytics API", "JWT Verification"] }
+      { category: "Frontend Stack", items: ["Next.js (App Router)", "TypeScript", "Tailwind CSS", "Recharts"] },
+      { category: "AI & Scraping", items: ["LLM Scoring Models", "Custom Web Scraper", "Rapid API", "REST APIs"] },
+      { category: "Backend & Storage", items: ["Node.js", "Express.js", "MongoDB Atlas", "JWT Auth"] },
+      { category: "Deployment", items: ["Vercel Edge Engine", "GitHub Actions"] }
     ],
     architectureAscii: `
  ┌────────────────────────────────────────────────────────────────────────┐
- │                        PROGRESS IQ ARCHITECTURE                        │
+ │                         DEV RANK ARCHITECTURE                          │
  ├────────────────────────────────────────────────────────────────────────┤
- │  Client Web Application (Next.js 14 + React 18 + Tailwind CSS)        │
- │  ├── State Management: Zustand Atomic Store                             │
- │  └── Realtime Socket Listener: Socket.io Client                        │
+ │  Developer Ranking Portal (Next.js + TypeScript + Tailwind)            │
+ │  ├── Leaderboard Table & Search Filtering Matrix                      │
+ │  └── Realtime Profile Card Viewers                                     │
  └───────────────────────────────────┬────────────────────────────────────┘
-                                     │ (WSS / HTTPS APIs)
+                                     │ (API Calls)
  ┌───────────────────────────────────▼────────────────────────────────────┐
- │  Node.js API Server & Socket Cluster Engine                            │
- │  ├── Middleware: JWT Auth & RBAC Guard                                 │
- │  ├── Worker Threads: AI Analytics Aggregator                           │
- │  └── Socket Pub/Sub: Redis Event Router                                │
+ │  Data Collector & LLM Scoring Engine                                   │
+ │  ├── GitHub API Collector (Commits, Stars, PRs, Repos)                │
+ │  ├── LeetCode API Scraper (Easy, Medium, Hard Solved Counts)          │
+ │  └── LLM Evaluator: Code Structure & Algorithmic Heuristics           │
  └───────────────────────────────────┬────────────────────────────────────┘
                                      │
  ┌───────────────────────────────────▼────────────────────────────────────┐
- │  Persistent Storage & Cache Tier                                       │
- │  ├── MongoDB Atlas (User Schemas, Project Telemetry, Logs)            │
- │  └── Redis Cache (Active Connections & Realtime State Snapshots)       │
+ │  Storage & Cache                                                       │
+ │  └── MongoDB Atlas (Rankings Cache & Historical Score Logs)            │
  └────────────────────────────────────────────────────────────────────────┘`,
     terminalLogs: [
-      "$ progress-iq status --node-cluster",
-      "[SYS_INFO] Cluster Status: 4 Workers Operational",
-      "[SYS_INFO] Active Socket Connections: 1,420 active threads",
-      "$ progress-iq telemetry --verify-latency",
-      "[LATENCY_CHECK] Avg Ping: 32ms | Packet Loss: 0.00%",
-      "$ progress-iq ai-engine --analyze-sprint",
-      "[AI_METRICS] Velocity index: 94.2% | Bottlenecks detected: 0",
-      "[SUCCESS] Realtime monitoring system running at peak efficiency."
+      "$ dev-rank fetch --user thayanithi-dev",
+      "[FETCH] GitHub Repos: 45 | Total Stars: 28 | Commits: 1,500+",
+      "$ dev-rank fetch --leetcode thayanithi04",
+      "[FETCH] Problems Solved: 300+ (Easy: 120, Med: 155, Hard: 25)",
+      "$ dev-rank evaluate-llm --user thayanithi-dev",
+      "[LLM_EVAL] Codebase Quality Score: 95.8% | Algorithmic Rank: TIER_1",
+      "[SUCCESS] Dev Rank talent engine online."
+    ]
+  },
+  "saha-yatri": {
+    slug: "saha-yatri",
+    assetPrefix: "SAHAYATRI",
+    level: "PROJ_02",
+    name: "SAHA YATRI",
+    tagline: "TOURIST SAFETY & SMART TRAVEL MOBILE APP (SIH 2025)",
+    category: "Mobile Systems / Tourist Safety & Emergency Telemetry",
+    timeline: "2024 – 2025",
+    role: "Mobile Systems Engineer",
+    status: "PROTOTYPE_COMPLETE",
+    url: "https://github.com/thayanithi-dev",
+    githubUrl: "https://github.com/thayanithi-dev",
+    shortDesc: "Cross-platform travel safety mobile application designed for SIH 2025, integrating interactive Leaflet maps, 1-touch SOS emergency dispatch, and multi-language localization.",
+    fullDescription: "Saha Yatri is a cross-platform mobile application developed for the Smart India Hackathon (SIH 2025). Designed to protect tourists in unfamiliar terrains, Saha Yatri features real-time GPS telemetry on interactive Leaflet maps, instant 1-touch SOS rescue alerts transmitted to authorities, on-demand transport, local food ordering, and dynamic multi-language (i18n) localization.",
+    problemStatement: "Tourists traveling in remote or unfamiliar destinations struggle with emergency responsiveness, language barriers, and lack of unified transportation and safety routing.",
+    solutionOverview: "Built a responsive mobile application with React Native, Leaflet Maps, and RESTful APIs incorporating instantaneous SOS location broadcasting, emergency contact syncing, and offline-capable travel utilities.",
+    image: bitlinks1Img,
+    gallery: [bitlinks1Img, bitlinks2Img],
+    metrics: [
+      { label: "Hackathon Tier", value: "SIH 2025", description: "Shortlisted on Waiting List for National Evaluation" },
+      { label: "SOS Response Trigger", value: "< 100ms", description: "Instant location dispatch to rescue teams & emergency contacts" },
+      { label: "Map Rendering", value: "60 FPS", description: "Interactive Leaflet maps with offline layer caching" },
+      { label: "Localization", value: "Multi-Lang (i18n)", description: "Dynamic language translation across UI modules" }
+    ],
+    keyFeatures: [
+      {
+        title: "Instant One-Touch SOS Emergency Dispatch",
+        description: "High-priority rescue broadcast transmitting live GPS coordinates, battery level, and user identity to local emergency services."
+      },
+      {
+        title: "Interactive Leaflet Maps & Location Telemetry",
+        description: "Smooth map rendering with route calculation, safety zone overlays, and real-time tourist location tracking."
+      },
+      {
+        title: "Auxiliary Travel Utilities",
+        description: "Integrated on-demand car rental booking, authentic local food ordering, and verified regional guide directories."
+      },
+      {
+        title: "Dynamic Multi-Language Localization (i18n)",
+        description: "Seamless on-the-fly UI language switching to eliminate communication hurdles for domestic and international travelers."
+      }
+    ],
+    techStack: [
+      { category: "Mobile Framework", items: ["React Native", "Expo / Gradle", "JavaScript / TypeScript", "Tailwind CSS"] },
+      { category: "Geospatial & Mapping", items: ["Leaflet Maps", "OpenStreetMap Telemetry", "GPS Geolocation APIs"] },
+      { category: "Backend & Emergency APIs", items: ["Node.js", "Express.js", "MongoDB", "Twilio / SMS Gateway", "i18n"] },
+      { category: "Tooling", items: ["Android Studio", "Postman", "Git / GitHub Actions"] }
+    ],
+    architectureAscii: `
+ ┌────────────────────────────────────────────────────────────────────────┐
+ │                        SAHA YATRI ARCHITECTURE                         │
+ ├────────────────────────────────────────────────────────────────────────┤
+ │  React Native Mobile App (Leaflet Maps + SOS Dispatch + i18n Engine)   │
+ │  ├── Real-time GPS Geolocation Tracker                                 │
+ │  └── One-Touch Emergency Dispatch Trigger                              │
+ └───────────────────────────────────┬────────────────────────────────────┘
+                                     │ (Encrypted REST APIs)
+ ┌───────────────────────────────────▼────────────────────────────────────┐
+ │  Emergency Telemetry & Services Gateway (Node.js / Express)            │
+ │  ├── SOS Router: SMS & Authority Rescue Dispatch                       │
+ │  ├── Mapping Controller: Leaflet Routing & Safe Zone Polygon Engine    │
+ │  └── Travel Utilities: Car Rental & Food Ordering APIs                 │
+ └───────────────────────────────────┬────────────────────────────────────┘
+                                     │
+ ┌───────────────────────────────────▼────────────────────────────────────┐
+ │  Database & Telemetry Storage                                          │
+ │  └── MongoDB Atlas (Tourist Profiles, SOS Event Logs, Geo-Fencing Data)│
+ └────────────────────────────────────────────────────────────────────────┘`,
+    terminalLogs: [
+      "$ sahayatri-gps ping --device tourist-node-91",
+      "[GPS_LOCK] Lat: 11.5034, Long: 77.2444 | Accuracy: ±3m",
+      "$ sahayatri-sos trigger --mode emergency",
+      "[EMERGENCY_DISPATCH] SOS telemetry broadcasted to 3 verified contacts in 82ms.",
+      "[SUCCESS] Saha Yatri safety engine operational."
     ]
   },
   "eq-rev": {
     slug: "eq-rev",
     assetPrefix: "EQREV",
-    level: "PROJ_02",
+    level: "PROJ_01",
     name: "EQ REV",
-    tagline: "QUICK COMMERCE ANALYTICS PLATFORM FOR D2C BRANDS",
+    tagline: "QUICK COMMERCE GROWTH PLATFORM FOR D2C BRANDS",
     category: "SaaS Platform / E-Commerce Intelligence",
     timeline: "Jan 2025 – Dec 2025",
-    role: "Software Engineer (Fullstack & Data)",
+    role: "Software Developer (Product & Platform)",
     status: "PRODUCTION_ONLINE",
     url: "https://app.eqrev.com/",
-    shortDesc: "EQREV specializes in scaling brands across Quick Commerce platforms (Zepto, Blinkit, Instamart). Provides pin code-level insights, inventory tracking, and revenue dashboards.",
-    fullDescription: "EQ REV is an enterprise SaaS analytics platform engineered specifically for D2C brands scaling on instant quick-commerce platforms like Zepto, Blinkit, and Swiggy Instamart. The system ingests and processes granular location data, enabling store managers and founders to analyze sales performance down to individual pin codes and warehouse fulfillment centers across India.",
+    githubUrl: "https://github.com/thayanithi-dev",
+    shortDesc: "Quick Commerce analytics platform delivering pin-code metrics across 1,000+ stores on Zepto, Blinkit, and Swiggy Instamart for leading D2C brands (Mee Mee, Ramraj, Underneat).",
+    fullDescription: "EQ REV is an enterprise SaaS analytics platform engineered specifically for D2C brands scaling on instant quick-commerce platforms like Zepto, Blinkit, and Swiggy Instamart. The system ingests and processes massive location data streams across Google BigQuery and GCS, reducing manual effort by 60% and improving report generation efficiency by 40%.",
     problemStatement: "Brands selling on Quick Commerce platforms face complete dark spots regarding hyper-local demand, pin-code inventory stockouts, and regional channel analytics.",
-    solutionOverview: "Built a multi-tenant analytics engine with interactive Chart.js/Recharts data visualizations, automated BigQuery data processing pipelines, OTP authentication, and responsive Hero UI dashboards.",
+    solutionOverview: "Architected the complete production full-stack web application across 3 core modules using React.js and Node.js/Express REST APIs, integrating Google BigQuery for real-time aggregation queries and Cloudflare for edge security.",
     image: eqrev1Img,
     gallery: [eqrev1Img],
     metrics: [
-      { label: "Retail Stores Analyzed", value: "1,000+", description: "Hyper-local store pin codes tracked in real-time" },
-      { label: "Platforms Integrated", value: "3 Major Q-Comm", description: "Zepto, Blinkit & Swiggy Instamart" },
-      { label: "Key Enterprise Clients", value: "Mee Mee, Ramraj", description: "Adopted by top D2C consumer product brands" },
-      { label: "Query Throughput", value: "10M+ rows/sec", description: "BigQuery powered data aggregation pipelines" }
+      { label: "Stores Analyzed", value: "1,000+", description: "Hyper-local store pin codes tracked in real-time" },
+      { label: "Data Scale", value: "2B+ Records", description: "Ingestion and extraction across GCS & BigQuery" },
+      { label: "Efficiency Gain", value: "+40%", description: "Report generation velocity acceleration" },
+      { label: "Manual Effort Reduction", value: "-60%", description: "Automated backend data pipelines" }
     ],
     keyFeatures: [
       {
@@ -266,19 +415,19 @@ export const projectsData: Record<string, ProjectDetail> = {
         description: "Unified analytics dashboard comparing revenue velocity, SKU performance, and stockouts across Zepto, Blinkit, and Instamart."
       },
       {
-        title: "Automated Stockout Alerting",
-        description: "Smart inventory monitoring that flags low-stock warehouses before replenishment failure affects revenue."
+        title: "Automated Backend Data Pipelines",
+        description: "Automated ETL extraction and transformation scheduling reducing manual processing overhead by 60%."
       },
       {
-        title: "Role-Based Brand Portal",
-        description: "Multi-tenant portal featuring custom dashboard views for brand executives, category managers, and regional leads."
+        title: "Edge Security & Role-Based Authentication",
+        description: "Cloudflare edge security acceleration paired with secure OTP login and multi-tier access control."
       }
     ],
     techStack: [
       { category: "Frontend Stack", items: ["React.js", "Chart.js", "Recharts", "Tailwind CSS", "Hero UI", "Zustand"] },
       { category: "Backend Architecture", items: ["Node.js", "Express.js", "REST APIs", "Cloudflare Workers"] },
-      { category: "Database & Data Warehouse", items: ["Google BigQuery", "MongoDB Atlas", "PostgreSQL", "Prisma ORM"] },
-      { category: "Infrastructure & Security", items: ["Google Cloud Platform (GCP)", "Vercel Enterprise", "JWT / OTP Auth"] }
+      { category: "Database & Warehouse", items: ["Google BigQuery", "MongoDB Atlas", "PostgreSQL", "Google Cloud Storage (GCS)"] },
+      { category: "Cloud & Security", items: ["Google Cloud Platform (GCP)", "Cloudflare Edge", "JWT / OTP Auth"] }
     ],
     architectureAscii: `
  ┌────────────────────────────────────────────────────────────────────────┐
@@ -311,157 +460,83 @@ export const projectsData: Record<string, ProjectDetail> = {
       "[SUCCESS] Brand analytics portal initialized & active."
     ]
   },
-  "bitlinks": {
-    slug: "bitlinks",
-    assetPrefix: "BITLINKS",
-    level: "PROJ_01",
-    name: "BITLINKS",
-    tagline: "COLLEGE COMMUNITY NETWORK & COLLABORATIVE WORKSPACE PORTAL",
-    category: "Community Network / Campus Platform",
-    timeline: "2024 – 2025",
-    role: "Fullstack Creator & Architect",
-    status: "PRODUCTION_ONLINE",
-    url: "https://bitlinks.bitsathy.ac.in/",
-    shortDesc: "Modern community portal featuring smooth animations, optimized speed, responsive design, and collaborative workspaces for campus students and developer communities.",
-    fullDescription: "Bitlinks is a student community and networking portal crafted for Bannari Amman Institute of Technology (BIT). The platform connects student developers, project teams, club networks, and academic resources through a streamlined, highly responsive digital ecosystem featuring fluid Framer Motion micro-interactions.",
-    problemStatement: "Fragmented campus communication across multiple messaging groups led to missed event announcements, lost technical project opportunities, and difficult team recruitment.",
-    solutionOverview: "Built a centralized web portal with Next.js, Framer Motion, and Tailwind CSS offering quick resource links, developer profile showcases, event calendars, and collaborative club workspaces.",
-    image: bitlinks1Img,
-    gallery: [bitlinks1Img, bitlinks2Img],
-    metrics: [
-      { label: "Community Engagement", value: "Campus Wide", description: "Serving student developers & academic clubs" },
-      { label: "Lighthouse Performance", value: "98 / 100", description: "Optimized Vercel edge build load times" },
-      { label: "UI Motion Score", value: "60 FPS", description: "Butter-smooth Framer Motion animation pipeline" },
-      { label: "Mobile Responsiveness", value: "100%", description: "Flawless viewports on mobile devices & tablets" }
-    ],
-    keyFeatures: [
-      {
-        title: "Collaborative Project Hub",
-        description: "Dedicated directory for student open-source projects, team recruitment, and skill matching."
-      },
-      {
-        title: "Fluid Framer Motion UI",
-        description: "Custom animation system providing modern transitions, micro-interactions, and visual polish."
-      },
-      {
-        title: "Centralized Campus Resources",
-        description: "Curated directory of development resources, hackathon portals, course notes, and club schedules."
-      },
-      {
-        title: "Dark / Light Mode Aesthetic",
-        description: "System-aware theme management adhering to modern engineering design standards."
-      }
-    ],
-    techStack: [
-      { category: "Core Framework", items: ["Next.js (App Router)", "TypeScript", "React.js"] },
-      { category: "Styling & Motion", items: ["Tailwind CSS", "Framer Motion", "Lucide React"] },
-      { category: "Deployment", items: ["Vercel Edge Platform", "Domain DNS Integration"] }
-    ],
-    architectureAscii: `
- ┌────────────────────────────────────────────────────────────────────────┐
- │                         BITLINKS ARCHITECTURE                          │
- ├────────────────────────────────────────────────────────────────────────┤
- │  Campus Portal UI (Next.js App Router + TypeScript + Tailwind)        │
- │  ├── Interactive Component Registry & Animated Routes                  │
- │  └── Framer Motion Orchestration Engine                                │
- └───────────────────────────────────┬────────────────────────────────────┘
-                                     │ (Client Side Navigation)
- ┌───────────────────────────────────▼────────────────────────────────────┐
- │  Vercel Edge Network Infrastructure                                    │
- │  ├── Edge SSR & Static Asset Delivery                                  │
- │  └── Cached Resource Routers                                           │
- └────────────────────────────────────────────────────────────────────────┘`,
-    terminalLogs: [
-      "$ bitlinks-cli build --prod",
-      "[BUILD_SUCCESS] Compiled static routes in 1.4s.",
-      "$ bitlinks-cli audit --performance",
-      "[LIGHTHOUSE] Performance: 98 | Accessibility: 100 | SEO: 95",
-      "[SUCCESS] Bitlinks portal online."
-    ]
-  },
-  "dev-rank": {
-    slug: "dev-rank",
-    assetPrefix: "DEVRANK",
+  "reqtimeline": {
+    slug: "reqtimeline",
+    assetPrefix: "REQTIMELINE",
     level: "PROJ_00",
-    name: "DEV RANK",
-    tagline: "DEVELOPER RANKING & PROFILE AGGREGATOR PLATFORM",
-    category: "Developer Tools / Portfolio Analytics",
-    timeline: "2024 – 2025",
-    role: "Lead Developer",
-    status: "PRODUCTION_ONLINE",
-    url: "http://dev-rank.vercel.app/",
+    name: "REQTIMELINE (NPM)",
+    tagline: "EXPRESS.JS REQUEST LIFECYCLE & EXECUTION PROFILER",
+    category: "Open-Source Developer Tooling / Performance Heuristics",
+    timeline: "2025",
+    role: "Creator & Open-Source Author",
+    status: "PUBLISHED_NPM",
+    url: "https://www.npmjs.com/package/reqtimeline",
     githubUrl: "https://github.com/thayanithi-dev",
-    shortDesc: "Developer Ranking Platform. Connects coding profiles (GitHub, LeetCode) to compute and display rankings in developer communities, helping recruiters discover top talent.",
-    fullDescription: "Dev Rank is an AI-powered developer profile aggregation and ranking platform. By integrating external APIs and web scraping routines, Dev Rank synthesizes developer activity across GitHub, LeetCode, and coding platforms into unified engineering rank scores, enabling peer comparison and talent discovery.",
-    problemStatement: "Recruiters and community leads lack a single objective metric to compare a developer's real-world code contributions alongside algorithmic problem-solving skills.",
-    solutionOverview: "Constructed a profile parser and ranking engine with Next.js, Rapid API, and automated web scrapers that computes normalized rank metrics based on commit history, repository stars, and LeetCode problem difficulties.",
+    shortDesc: "Published zero-dependency npm profiler offering sub-millisecond execution tracking, slow step detection, nested timeline visualizer trees, and P50-P99 latency aggregation.",
+    fullDescription: "reqtimeline is a lightweight, zero-dependency performance profiling middleware and CLI published to npm. Designed for high-throughput Express.js applications, reqtimeline tracks the entire lifecycle of an incoming HTTP request with sub-millisecond precision, identifying slow middleware steps, database queries, and bottlenecks with nested visual execution trees.",
+    problemStatement: "Node.js developers struggle with invisible latency bottlenecks across complex Express middleware chains and database queries without heavy, proprietary APM overhead.",
+    solutionOverview: "Engineered a zero-dependency profiler utilizing high-resolution timers (`process.hrtime.bigint()`), automated critical-path bottleneck detection, slow request fingerprinting, and global P50/P75/P95/P99 latency aggregation with real-time scoring.",
     image: devrank1Img,
-    gallery: [
-      devrank1Img,
-      devrank2Img,
-      devrank3Img,
-      devrank4Img,
-      devrank5Img,
-      devrank6Img,
-    ],
+    gallery: [devrank1Img, devrank2Img],
     metrics: [
-      { label: "Profile Sources", value: "GitHub & LeetCode", description: "Aggregated coding metrics" },
-      { label: "Ranking Algorithm", value: "Weighted Index", description: "Balances commits, stars, & problem difficulty" },
-      { label: "Scraping Latency", value: "< 1.2s", description: "Fast asynchronous API fetch handlers" },
-      { label: "User Profiles", value: "Community Scale", description: "Ranking developer profiles seamlessly" }
+      { label: "Package Overhead", value: "0 Dependencies", description: "Pure lightweight Node.js runtime execution" },
+      { label: "Timer Resolution", value: "Sub-Millisecond", description: "Nanosecond-level process.hrtime tracking" },
+      { label: "Latency Aggregation", value: "P50 to P99", description: "Statistical latency percentiles & bottleneck heuristics" },
+      { label: "Ecosystem", value: "npm registry", description: "Easily installable via npm i reqtimeline" }
     ],
     keyFeatures: [
       {
-        title: "Multi-Platform Profile Fetcher",
-        description: "Asynchronous data collectors gathering public metrics from GitHub repositories and LeetCode profile APIs."
+        title: "Sub-Millisecond Execution Tracking",
+        description: "Nanosecond-precise timer probes measuring exact duration spent across each middleware, route handler, and asynchronous function."
       },
       {
-        title: "Weighted Dev Rank Score",
-        description: "Custom scoring formula calculating overall developer tier by combining code frequency, star count, and solved problem difficulty."
+        title: "Nested Timeline Visualizer Trees",
+        description: "Generates clear hierarchical CLI and JSON timeline trees detailing sequential and concurrent step durations."
       },
       {
-        title: "Leaderboard & Search Matrix",
-        description: "Filterable community leaderboards enabling instant searching by stack, ranking tier, or institution."
+        title: "Automated Bottleneck Detection",
+        description: "Intelligent heuristic engine highlighting slowest execution steps and flagging critical path delays."
       },
       {
-        title: "Visual Badge Generator",
-        description: "Embeddable SVG cards displaying rank metrics for developer README profiles."
+        title: "Global P50/P75/P95/P99 Latency Scoring",
+        description: "Aggregated statistical performance scoring assisting developers in optimizing API response throughput."
       }
     ],
     techStack: [
-      { category: "Frontend Stack", items: ["Next.js (App Router)", "TypeScript", "Tailwind CSS", "Recharts"] },
-      { category: "Data Ingestion", items: ["Rapid API", "Custom Data Scraping Engine", "REST Endpoints"] },
-      { category: "Backend & Storage", items: ["Node.js", "Express API", "MongoDB Atlas"] },
-      { category: "Deployment", items: ["Vercel Edge Engine"] }
+      { category: "Core Runtime", items: ["Node.js", "Express.js", "TypeScript", "JavaScript"] },
+      { category: "Performance Engine", items: ["process.hrtime", "Performance Heuristics", "Statistical Percentiles"] },
+      { category: "Distribution", items: ["npm Package Registry", "CLI Tooling", "GitHub Open Source"] }
     ],
     architectureAscii: `
  ┌────────────────────────────────────────────────────────────────────────┐
- │                         DEV RANK ARCHITECTURE                          │
+ │                        REQTIMELINE ARCHITECTURE                        │
  ├────────────────────────────────────────────────────────────────────────┤
- │  Developer Ranking Portal (Next.js + TypeScript + Tailwind)            │
- │  ├── Leaderboard Table & Search Filtering Matrix                      │
- │  └── Realtime Profile Card Viewers                                     │
+ │  Incoming Express.js HTTP Request                                      │
+ │  ├── [Middleware 1: Auth] ──> (Timestamp Probe: +0.42ms)               │
+ │  ├── [Middleware 2: Validation] ──> (Timestamp Probe: +0.18ms)         │
+ │  └── [Route Handler: DB Query] ──> (Timestamp Probe: +14.2ms) [SLOW]   │
  └───────────────────────────────────┬────────────────────────────────────┘
-                                     │ (API Calls)
+                                     │ (High-Resolution Timer Stream)
  ┌───────────────────────────────────▼────────────────────────────────────┐
- │  Data Collector & Ranking Calculation Engine                          │
- │  ├── GitHub API Collector (Commits, Stars, PRs, Repos)                │
- │  ├── LeetCode API Scraper (Easy, Medium, Hard Solved Counts)          │
- │  └── DevScore Evaluator: Weighted Multi-Factor Algorithm               │
+ │  reqtimeline Heuristic Engine                                          │
+ │  ├── Critical Path Analyzer & Fingerprinter                            │
+ │  ├── Nested Visualizer Tree Builder                                    │
+ │  └── Percentile Aggregator (P50, P75, P95, P99)                        │
  └───────────────────────────────────┬────────────────────────────────────┘
                                      │
  ┌───────────────────────────────────▼────────────────────────────────────┐
- │  Storage & Cache                                                       │
- │  └── MongoDB Atlas (Rankings Cache & Historical Score Logs)            │
+ │  Output Destination                                                    │
+ │  └── Terminal CLI Output / HTTP Header Telemetry / JSON Log Vault      │
  └────────────────────────────────────────────────────────────────────────┘`,
     terminalLogs: [
-      "$ dev-rank fetch --user thayanithi-dev",
-      "[FETCH] GitHub Repos: 45 | Total Stars: 28 | Commits: 2,100+",
-      "$ dev-rank fetch --leetcode thayanithi15",
-      "[FETCH] Problems Solved: 300+ (Easy: 120, Med: 155, Hard: 25)",
-      "$ dev-rank calculate-tier --user thayanithi-dev",
-      "[SCORE_EVAL] Calculated DevScore: 945 / 1000 [TIER: EXPERT]",
-      "[SUCCESS] Dev Rank engine online."
+      "$ npm install reqtimeline",
+      "[NPM] Package reqtimeline installed successfully.",
+      "$ node server.js --profile",
+      "[REQTIMELINE] GET /api/v1/analytics [200 OK] - Total: 15.8ms",
+      " ├─ authMiddleware: 0.42ms",
+      " ├─ validateParams: 0.18ms",
+      " └─ queryBigQuery: 14.82ms [BOTTLENECK IDENTIFIED]",
+      "[SUCCESS] reqtimeline profiler active."
     ]
   }
-};
+}
