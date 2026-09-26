@@ -281,11 +281,12 @@ export function HeroSection() {
             </span>
           </a>
           <a
-            href="#featured-projects"
-            onClick={(e) => handleScrollTo(e, "featured-projects")}
+            href="https://drive.google.com/file/d/1AQ8rsLtmUPY2JDK-tzD_BYZ8Pi_fceHv/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 border border-border px-6 py-3 font-mono text-sm text-muted-foreground transition-all duration-200 hover:border-foreground hover:text-foreground focus-visible:ring-2 focus-visible:ring-foreground focus-visible:outline-none w-full sm:w-auto"
           >
-            View Projects
+            View Resume
           </a>
         </motion.div>
 
